@@ -1,9 +1,17 @@
 # Awesome-Robot-Use-Agent
 
+<p align="center">
+  <img src="Assets/wordmark-dark.png" alt="Awesome Robot Use Agent" width="500">
+</p>
+
 A curated list of research on general-purpose AI agents that perceive, program, and operate robots through tools, interfaces, and reusable skills.
 
 Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/writing/robot-use-agents.html). The emphasis is on how general-purpose intelligence can be connected to different robots and how improvements can spread through models, software interfaces, and reusable capabilities.
 
+
+<p align="center">
+  <img src="Assets/architecture.png" alt="High-level architecture of Robot Use Agents: generalist agents, robot interfaces, the physical world, and self-evolution." width="1100">
+</p>
 
 ## Contents
 
