@@ -318,3 +318,5 @@ These are essays, research blogs, and evaluations; they are listed separately fr
   <a href="https://www.waddlelabs.ai/research/introducing-waddle"><img src="https://img.shields.io/badge/-article-blue" alt="Article"></a>
 - GPT-6 Astra on robotic manipulation — Robocurve, 2026. *Independent evaluation.*
   <a href="https://openai.robocurve.org/gpt-6-astra/"><img src="https://img.shields.io/badge/-article-blue" alt="Article"></a>
+- Introducing Auto Engineering for Robotics - General Robotics, 2026. *Blog / demo.*
+  <a href="https://www.generalrobotics.company/post/introducing-auto-engineering-for-robotics"><img src="https://img.shields.io/badge/-article-blue" alt="Article"></a>
