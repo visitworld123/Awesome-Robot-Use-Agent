@@ -1,4 +1,4 @@
-# Awesome-Robot-Use-Agent
+# Awesome-Robot-Use-Agent (RUA)
 
 A curated list of research on general-purpose AI agents that perceive, program, and operate robots through tools, interfaces, and reusable skills.
 
