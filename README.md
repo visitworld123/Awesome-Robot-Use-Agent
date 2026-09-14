@@ -8,7 +8,6 @@ A curated list of research on general-purpose AI agents that perceive, program, 
 
 Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/writing/robot-use-agents.html). The emphasis is on how general-purpose intelligence can be connected to different robots and how improvements can spread through models, software interfaces, and reusable capabilities.
 
-
 <p align="center">
   <img src="Assets/architecture.png" alt="High-level architecture of Robot Use Agents: generalist agents, robot interfaces, the physical world, and self-evolution." width="1100">
 </p>
@@ -20,6 +19,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 - [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes)
 - [Programming and Spatial Action Interfaces](#programming-and-spatial-action-interfaces)
 - [Planning, Skill Orchestration and Memory](#planning-skill-orchestration-and-memory)
+  - [Task Planning, Skill Orchestration and Memory](#task-planning-skill-orchestration-and-memory)
+  - [Safe Planning, Verification and Failure Recovery](#safe-planning-verification-and-failure-recovery)
+  - [Multi-Robot Coordination](#multi-robot-coordination)
 - [Language-Native Actions and Cross-Embodiment Transfer](#language-native-actions-and-cross-embodiment-transfer)
 - [Infrastructure and Benchmarks](#infrastructure-and-benchmarks)
 - [Perspectives and Reports](#perspectives-and-reports)
@@ -118,12 +120,14 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/s20sc/governed-capability-evolution"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/s20sc/governed-capability-evolution"><img src="https://img.shields.io/github/stars/s20sc/governed-capability-evolution" alt="stars"></a>
 
-Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and WCM](#embodied-agent-operating-systems-and-runtimes). Execution-time recovery methods are listed under [Planning, Skill Orchestration and Memory](#planning-skill-orchestration-and-memory).
+Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and WCM](#embodied-agent-operating-systems-and-runtimes). Execution-time recovery methods are listed under [Safe Planning, Verification and Failure Recovery](#safe-planning-verification-and-failure-recovery).
 
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
 
+- Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection
+  <a href="https://arxiv.org/abs/2609.11225"><img src="https://img.shields.io/badge/arxiv-2609.11225-silver" alt="Paper"></a>
 - PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution
   <a href="https://arxiv.org/abs/2607.16636"><img src="https://img.shields.io/badge/arxiv-2607.16636-silver" alt="Paper"></a>
   <a href="https://github.com/PhyAgentOS/PhyAgentOS-core"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -159,6 +163,9 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 
 Code, visual prompts, geometric constraints, and other interfaces that connect model reasoning to robot execution.
 
+- GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes
+  <a href="https://arxiv.org/abs/2609.09808"><img src="https://img.shields.io/badge/arxiv-2609.09808-silver" alt="Paper"></a>
+  <a href="https://gta2-project.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Code as Policies: Language Model Programs for Embodied Control
   <a href="https://arxiv.org/abs/2209.07753"><img src="https://img.shields.io/badge/arxiv-2209.07753-silver" alt="Paper"></a>
 - ProgPrompt: Generating Situated Robot Task Plans using Large Language Models
@@ -200,14 +207,21 @@ Code, visual prompts, geometric constraints, and other interfaces that connect m
 
 Agents that select and coordinate robot capabilities, track state, verify outcomes, and recover from failures.
 
+#### Task Planning, Skill Orchestration and Memory
+
+Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+
+- 2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation
+  <a href="https://arxiv.org/abs/2609.11308"><img src="https://img.shields.io/badge/arxiv-2609.11308-silver" alt="Paper"></a>
+- Memory as Plans: World-Action Modeling with Memory-Grounded Planning
+  <a href="https://arxiv.org/abs/2609.11561"><img src="https://img.shields.io/badge/arxiv-2609.11561-silver" alt="Paper"></a>
+  <a href="https://sizhezhao.github.io/projects/MaP-WAM/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
   <a href="https://arxiv.org/abs/2204.01691"><img src="https://img.shields.io/badge/arxiv-2204.01691-silver" alt="Paper"></a>
 - Inner Monologue: Embodied Reasoning through Planning with Language Models
   <a href="https://arxiv.org/abs/2207.05608"><img src="https://img.shields.io/badge/arxiv-2207.05608-silver" alt="Paper"></a>
 - SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning
   <a href="https://arxiv.org/abs/2307.06135"><img src="https://img.shields.io/badge/arxiv-2307.06135-silver" alt="Paper"></a>
-- CoPAL: Corrective Planning of Robot Actions with Large Language Models
-  <a href="https://arxiv.org/abs/2310.07263"><img src="https://img.shields.io/badge/arxiv-2310.07263-silver" alt="Paper"></a>
 - RoboStream: Weaving Spatio-Temporal Reasoning with Memory in Vision-Language Models for Robotics
   <a href="https://arxiv.org/abs/2603.12939"><img src="https://img.shields.io/badge/arxiv-2603.12939-silver" alt="Paper"></a>
 - Towards the Harness of Embodied Agents
@@ -222,16 +236,22 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
   <a href="https://arxiv.org/abs/2503.12533"><img src="https://img.shields.io/badge/arxiv-2503.12533-silver" alt="Paper"></a>
 - Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents
   <a href="https://arxiv.org/abs/2505.23450"><img src="https://img.shields.io/badge/arxiv-2505.23450-silver" alt="Paper"></a>
-- RoCo: Dialectic Multi-Robot Collaboration with Large Language Models
-  <a href="https://arxiv.org/abs/2307.04738"><img src="https://img.shields.io/badge/arxiv-2307.04738-silver" alt="Paper"></a>
-  <a href="https://github.com/MandiZhao/robot-collab"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
-  <a href="https://github.com/MandiZhao/robot-collab"><img src="https://img.shields.io/github/stars/MandiZhao/robot-collab" alt="stars"></a>
-- SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models
-  <a href="https://arxiv.org/abs/2309.10062"><img src="https://img.shields.io/badge/arxiv-2309.10062-silver" alt="Paper"></a>
-  <a href="https://github.com/SMARTlab-Purdue/SMART-LLM"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
-  <a href="https://github.com/SMARTlab-Purdue/SMART-LLM"><img src="https://img.shields.io/github/stars/SMARTlab-Purdue/SMART-LLM" alt="stars"></a>
 - MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking
   <a href="https://arxiv.org/abs/2402.18796"><img src="https://img.shields.io/badge/arxiv-2402.18796-silver" alt="Paper"></a>
+
+#### Safe Planning, Verification and Failure Recovery
+
+Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
+
+- Safe Task Planning with Long-Term Graph Memory for Embodied Agents
+  <a href="https://arxiv.org/abs/2609.08444"><img src="https://img.shields.io/badge/arxiv-2609.08444-silver" alt="Paper"></a>
+  <a href="https://sites.google.com/view/safemem"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/lty759/SafeMem"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/lty759/SafeMem"><img src="https://img.shields.io/github/stars/lty759/SafeMem" alt="stars"></a>
+- VLA-Corrector: Stage-Aware Observable State Understanding for Prompt-Based Closed-Loop Recovery of Vision-Language-Action Policies
+  <a href="https://arxiv.org/abs/2609.06508"><img src="https://img.shields.io/badge/arxiv-2609.06508-silver" alt="Paper"></a>
+- CoPAL: Corrective Planning of Robot Actions with Large Language Models
+  <a href="https://arxiv.org/abs/2310.07263"><img src="https://img.shields.io/badge/arxiv-2310.07263-silver" alt="Paper"></a>
 - REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction
   <a href="https://arxiv.org/abs/2306.15724"><img src="https://img.shields.io/badge/arxiv-2306.15724-silver" alt="Paper"></a>
   <a href="https://github.com/real-stanford/reflect"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -243,6 +263,20 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
   <a href="https://github.com/NVlabs/AHA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/NVlabs/AHA"><img src="https://img.shields.io/github/stars/NVlabs/AHA" alt="stars"></a>
 
+#### Multi-Robot Coordination
+
+Task allocation, communication, and organizational structures for teams of robots or embodied agents. ORCH is evaluated in simulation; system-level runtimes are listed under [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes).
+
+- ORCH: Organizational Principles Enable Collective Intelligence in Embodied AI
+  <a href="https://arxiv.org/abs/2609.11737"><img src="https://img.shields.io/badge/arxiv-2609.11737-silver" alt="Paper"></a>
+- RoCo: Dialectic Multi-Robot Collaboration with Large Language Models
+  <a href="https://arxiv.org/abs/2307.04738"><img src="https://img.shields.io/badge/arxiv-2307.04738-silver" alt="Paper"></a>
+  <a href="https://github.com/MandiZhao/robot-collab"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/MandiZhao/robot-collab"><img src="https://img.shields.io/github/stars/MandiZhao/robot-collab" alt="stars"></a>
+- SMART-LLM: Smart Multi-Agent Robot Task Planning using Large Language Models
+  <a href="https://arxiv.org/abs/2309.10062"><img src="https://img.shields.io/badge/arxiv-2309.10062-silver" alt="Paper"></a>
+  <a href="https://github.com/SMARTlab-Purdue/SMART-LLM"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/SMARTlab-Purdue/SMART-LLM"><img src="https://img.shields.io/github/stars/SMARTlab-Purdue/SMART-LLM" alt="stars"></a>
 
 ### Language-Native Actions and Cross-Embodiment Transfer
 
@@ -280,6 +314,11 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems.
 
+- LIBERO-RECOVER: Beyond Task Success Towards Failure Recovery in Robotic Manipulation Models
+  <a href="https://arxiv.org/abs/2609.05178"><img src="https://img.shields.io/badge/arxiv-2609.05178-silver" alt="Paper"></a>
+  <a href="https://liulin815.github.io/LIBERO-Recovery/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/liulin815/LIBERO-Recovery"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/liulin815/LIBERO-Recovery"><img src="https://img.shields.io/github/stars/liulin815/LIBERO-Recovery" alt="stars"></a>
 - Enabling Novel Mission Operations and Interactions with ROSA: The Robot Operating System Agent
   <a href="https://arxiv.org/abs/2410.06472"><img src="https://img.shields.io/badge/arxiv-2410.06472-silver" alt="Paper"></a>
   <a href="https://github.com/nasa-jpl/rosa"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
