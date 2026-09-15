@@ -30,6 +30,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
 
+- Agent as Policy for Robotic Manipulation
+  <a href="https://arxiv.org/abs/2609.12541"><img src="https://img.shields.io/badge/arxiv-2609.12541-silver" alt="Paper"></a>
+  <a href="https://huggingface.co/datasets/Agent-as-Policy/yam-agent-as-policy"><img src="https://img.shields.io/badge/huggingface-yellow" alt="huggingface"></a>
 - Show-Harness: Just a VLM Agent Can Play Robots
   <a href="https://arxiv.org/abs/2609.10522"><img src="https://img.shields.io/badge/arxiv-2609.10522-silver" alt="Paper"></a>
   <a href="https://github.com/showlab/Show-Harness"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -163,9 +166,15 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 
 Code, visual prompts, geometric constraints, and other interfaces that connect model reasoning to robot execution.
 
+- AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation
+  <a href="https://arxiv.org/abs/2609.12285"><img src="https://img.shields.io/badge/arxiv-2609.12285-silver" alt="Paper"></a>
+  <a href="https://github.com/aryanmangal769/embodied-nav-mcp"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/aryanmangal769/embodied-nav-mcp"><img src="https://img.shields.io/github/stars/aryanmangal769/embodied-nav-mcp" alt="stars"></a>
 - GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes
   <a href="https://arxiv.org/abs/2609.09808"><img src="https://img.shields.io/badge/arxiv-2609.09808-silver" alt="Paper"></a>
   <a href="https://gta2-project.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use
+  <a href="https://arxiv.org/abs/2608.14047"><img src="https://img.shields.io/badge/arxiv-2608.14047-silver" alt="Paper"></a>
 - Code as Policies: Language Model Programs for Embodied Control
   <a href="https://arxiv.org/abs/2209.07753"><img src="https://img.shields.io/badge/arxiv-2209.07753-silver" alt="Paper"></a>
 - ProgPrompt: Generating Situated Robot Task Plans using Large Language Models
@@ -202,8 +211,7 @@ Code, visual prompts, geometric constraints, and other interfaces that connect m
   <a href="https://arxiv.org/abs/2306.08647"><img src="https://img.shields.io/badge/arxiv-2306.08647-silver" alt="Paper"></a>
 - Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction
   <a href="https://arxiv.org/abs/2406.05572"><img src="https://img.shields.io/badge/arxiv-2406.05572-silver" alt="Paper"></a>
-- Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use
-  <a href="https://arxiv.org/abs/2608.14047"><img src="https://img.shields.io/badge/arxiv-2608.14047-silver" alt="Paper"></a>
+
 ### Planning, Skill Orchestration and Memory
 
 Agents that select and coordinate robot capabilities, track state, verify outcomes, and recover from failures.
@@ -217,6 +225,8 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
 - Memory as Plans: World-Action Modeling with Memory-Grounded Planning
   <a href="https://arxiv.org/abs/2609.11561"><img src="https://img.shields.io/badge/arxiv-2609.11561-silver" alt="Paper"></a>
   <a href="https://sizhezhao.github.io/projects/MaP-WAM/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models
+  <a href="https://arxiv.org/abs/2605.13119"><img src="https://img.shields.io/badge/arxiv-2605.13119-silver" alt="Paper"></a>
 - Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
   <a href="https://arxiv.org/abs/2204.01691"><img src="https://img.shields.io/badge/arxiv-2204.01691-silver" alt="Paper"></a>
 - Inner Monologue: Embodied Reasoning through Planning with Language Models
@@ -239,8 +249,6 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
   <a href="https://arxiv.org/abs/2505.23450"><img src="https://img.shields.io/badge/arxiv-2505.23450-silver" alt="Paper"></a>
 - MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking
   <a href="https://arxiv.org/abs/2402.18796"><img src="https://img.shields.io/badge/arxiv-2402.18796-silver" alt="Paper"></a>
-- Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models
-  <a href="https://arxiv.org/abs/2605.13119"><img src="https://img.shields.io/badge/arxiv-2605.13119-silver" alt="Paper"></a>
 
 #### Safe Planning, Verification and Failure Recovery
 
@@ -315,8 +323,21 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 
 ### Infrastructure and Benchmarks
 
-Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems.
+Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
 
+- No Free Checker: A Survey of Verifiers for Robot Policies — *Survey.*
+  <a href="https://arxiv.org/abs/2609.09250"><img src="https://img.shields.io/badge/arxiv-2609.09250-silver" alt="Paper"></a>
+  <a href="https://github.com/ZJUSCL/Awesome-Robot-Verifier"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/ZJUSCL/Awesome-Robot-Verifier"><img src="https://img.shields.io/github/stars/ZJUSCL/Awesome-Robot-Verifier" alt="stars"></a>
+- EvoNav-Bench: Benchmarking Lifelong Navigation in Evolving Environments
+  <a href="https://arxiv.org/abs/2609.08292"><img src="https://img.shields.io/badge/arxiv-2609.08292-silver" alt="Paper"></a>
+- ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs
+  <a href="https://arxiv.org/abs/2609.10895"><img src="https://img.shields.io/badge/arxiv-2609.10895-silver" alt="Paper"></a>
+  <a href="https://huggingface.co/datasets/Alan123/reacthuman-benchmark-scaled"><img src="https://img.shields.io/badge/huggingface-yellow" alt="huggingface"></a>
+- MEMOBench: A Process Level Memory Benchmark for Robotic Manipulation
+  <a href="https://arxiv.org/abs/2609.07047"><img src="https://img.shields.io/badge/arxiv-2609.07047-silver" alt="Paper"></a>
+  <a href="https://github.com/Collab-Gen/MEMOBench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Collab-Gen/MEMOBench"><img src="https://img.shields.io/github/stars/Collab-Gen/MEMOBench" alt="stars"></a>
 - LIBERO-RECOVER: Beyond Task Success Towards Failure Recovery in Robotic Manipulation Models
   <a href="https://arxiv.org/abs/2609.05178"><img src="https://img.shields.io/badge/arxiv-2609.05178-silver" alt="Paper"></a>
   <a href="https://liulin815.github.io/LIBERO-Recovery/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
