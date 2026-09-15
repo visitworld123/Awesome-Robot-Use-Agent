@@ -202,7 +202,8 @@ Code, visual prompts, geometric constraints, and other interfaces that connect m
   <a href="https://arxiv.org/abs/2306.08647"><img src="https://img.shields.io/badge/arxiv-2306.08647-silver" alt="Paper"></a>
 - Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction
   <a href="https://arxiv.org/abs/2406.05572"><img src="https://img.shields.io/badge/arxiv-2406.05572-silver" alt="Paper"></a>
-
+- Evolve Vision-Language-Action Model into an Agent with On-the-fly Tool-use
+  <a href="https://arxiv.org/abs/2608.14047"><img src="https://img.shields.io/badge/arxiv-2608.14047-silver" alt="Paper"></a>
 ### Planning, Skill Orchestration and Memory
 
 Agents that select and coordinate robot capabilities, track state, verify outcomes, and recover from failures.
@@ -238,6 +239,8 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
   <a href="https://arxiv.org/abs/2505.23450"><img src="https://img.shields.io/badge/arxiv-2505.23450-silver" alt="Paper"></a>
 - MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking
   <a href="https://arxiv.org/abs/2402.18796"><img src="https://img.shields.io/badge/arxiv-2402.18796-silver" alt="Paper"></a>
+- Towards Long-horizon Embodied Agents with Tool-Aligned Vision-Language-Action Models
+  <a href="https://arxiv.org/abs/2605.13119"><img src="https://img.shields.io/badge/arxiv-2605.13119-silver" alt="Paper"></a>
 
 #### Safe Planning, Verification and Failure Recovery
 
