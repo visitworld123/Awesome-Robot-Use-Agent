@@ -165,6 +165,11 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 ### Programming and Spatial Action Interfaces
 
 Code, visual prompts, geometric constraints, and other interfaces that connect model reasoning to robot execution.
+- ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts
+  <a href="https://arxiv.org/abs/2609.16331"><img src="https://img.shields.io/badge/arxiv-2609.16331-silver" alt="Paper"></a>
+
+- Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation — *Human-in-the-loop interface.*
+  <a href="https://arxiv.org/abs/2609.16346"><img src="https://img.shields.io/badge/arxiv-2609.16346-silver" alt="Paper"></a>
 
 - AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation
   <a href="https://arxiv.org/abs/2609.12285"><img src="https://img.shields.io/badge/arxiv-2609.12285-silver" alt="Paper"></a>
@@ -324,7 +329,10 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 ### Infrastructure and Benchmarks
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
-
+- FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence — *Engineering platform.*
+  <a href="https://arxiv.org/abs/2609.17210"><img src="https://img.shields.io/badge/arxiv-2609.17210-silver" alt="Paper"></a>
+  <a href="https://github.com/FluxVLA/FluxVLA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/FluxVLA/FluxVLA"><img src="https://img.shields.io/github/stars/FluxVLA/FluxVLA" alt="stars"></a>
 - No Free Checker: A Survey of Verifiers for Robot Policies — *Survey.*
   <a href="https://arxiv.org/abs/2609.09250"><img src="https://img.shields.io/badge/arxiv-2609.09250-silver" alt="Paper"></a>
   <a href="https://github.com/ZJUSCL/Awesome-Robot-Verifier"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
