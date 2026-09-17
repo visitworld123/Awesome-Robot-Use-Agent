@@ -29,7 +29,20 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
-
+- In-Context Robot Learning with VLM Agents — *GPT-Policy; in-context adaptation without parameter updates.*
+  <a href="https://arxiv.org/abs/2609.19138"><img src="https://img.shields.io/badge/arxiv-2609.19138-silver" alt="Paper"></a>
+  <a href="https://cheng-haha.github.io/GPT-Policy/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/cheng-haha/GPT-Policy"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/cheng-haha/GPT-Policy"><img src="https://img.shields.io/github/stars/cheng-haha/GPT-Policy" alt="stars"></a>
+- WetRobo: A Reproducible Robot Kit for Coding Agents in Biological Laboratories — *Laboratory robotics.*
+  <a href="https://arxiv.org/abs/2609.18435"><img src="https://img.shields.io/badge/arxiv-2609.18435-silver" alt="Paper"></a>
+  <a href="https://github.com/tsudalab/WetRobo"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/tsudalab/WetRobo"><img src="https://img.shields.io/github/stars/tsudalab/WetRobo" alt="stars"></a>
+- HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness — *Navigation.*
+  <a href="https://arxiv.org/abs/2609.15195"><img src="https://img.shields.io/badge/arxiv-2609.15195-silver" alt="Paper"></a>
+  <a href="https://agibot-harnessvln.netlify.app/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- EMERGE-Policy: A Robot Mind Emerges Beyond a Single Policy
+  <a href="https://arxiv.org/abs/2608.29896"><img src="https://img.shields.io/badge/arxiv-2608.29896-silver" alt="Paper"></a>
 - Agent as Policy for Robotic Manipulation
   <a href="https://arxiv.org/abs/2609.12541"><img src="https://img.shields.io/badge/arxiv-2609.12541-silver" alt="Paper"></a>
   <a href="https://huggingface.co/datasets/Agent-as-Policy/yam-agent-as-policy"><img src="https://img.shields.io/badge/huggingface-yellow" alt="huggingface"></a>
@@ -58,7 +71,9 @@ General-purpose models operating robots through reusable harnesses, tools, and v
 Systems that turn experience into reusable knowledge, skill programs, improved policies, or validated capability upgrades. Includes human-guided methods and learned-policy precursors where noted.
 
 #### Memory and Knowledge Evolution
-
+- MessyMem: Learning-from-Doing Memory for Mobile Manipulation
+  <a href="https://arxiv.org/abs/2609.15976"><img src="https://img.shields.io/badge/arxiv-2609.15976-silver" alt="Paper"></a>
+  <a href="https://messymem.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Robo-Cortex: A Self-Evolving Embodied Agent via Dual-Grain Cognitive Memory and Autonomous Knowledge Induction
   <a href="https://arxiv.org/abs/2605.18729"><img src="https://img.shields.io/badge/arxiv-2605.18729-silver" alt="Paper"></a>
 - Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Language Corrections
@@ -67,7 +82,8 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
-
+- Self-Evolving Embodied Agents via Skill-Harness Evolution — *SHAPER; frozen-model skill and harness optimization.*
+  <a href="https://arxiv.org/abs/2608.11350"><img src="https://img.shields.io/badge/arxiv-2608.11350-silver" alt="Paper"></a>
 - ASPIRE: Agentic /Skills Discovery for Robotics
   <a href="https://arxiv.org/abs/2607.00272"><img src="https://img.shields.io/badge/arxiv-2607.00272-silver" alt="Paper"></a>
   <a href="https://github.com/NVlabs/ASPIRE"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -93,8 +109,11 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://arxiv.org/abs/2607.14047"><img src="https://img.shields.io/badge/arxiv-2607.14047-silver" alt="Paper"></a>
   <a href="https://github.com/open-gigaai/Zero2Skill"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/open-gigaai/Zero2Skill"><img src="https://img.shields.io/github/stars/open-gigaai/Zero2Skill" alt="stars"></a>
-- ENPIRE: Agentic Robot Policy Self-Improvement in the Real World
+- ENPIRE: Agentic Robot Policy Self-Improvement in the Real World — *Coding-agent-driven real-world policy and algorithm improvement.*
   <a href="https://arxiv.org/abs/2606.19980"><img src="https://img.shields.io/badge/arxiv-2606.19980-silver" alt="Paper"></a>
+  <a href="https://research.nvidia.com/labs/gear/enpire/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/NVlabs/ENPIRE"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/NVlabs/ENPIRE"><img src="https://img.shields.io/github/stars/NVlabs/ENPIRE" alt="stars"></a>
 - HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning
   <a href="https://arxiv.org/abs/2606.08610"><img src="https://img.shields.io/badge/arxiv-2606.08610-silver" alt="Paper"></a>
 - AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents
@@ -128,7 +147,8 @@ Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
-
+- Retriever: Composing the Perception-Reasoning-Action Loop for Long-Horizon Manipulation — *Asynchronous runtime and deterministic replay.*
+  <a href="https://arxiv.org/abs/2607.17213"><img src="https://img.shields.io/badge/arxiv-2607.17213-silver" alt="Paper"></a>
 - Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection
   <a href="https://arxiv.org/abs/2609.11225"><img src="https://img.shields.io/badge/arxiv-2609.11225-silver" alt="Paper"></a>
 - PhyAgentOS: A Self-Evolving Operating System for Embodied Agents with Decoupled Cognitive Planning and Physical Execution
@@ -170,7 +190,8 @@ Code, visual prompts, geometric constraints, and other interfaces that connect m
 
 - Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation — *Human-in-the-loop interface.*
   <a href="https://arxiv.org/abs/2609.16346"><img src="https://img.shields.io/badge/arxiv-2609.16346-silver" alt="Paper"></a>
-
+- KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation — *Learned low-level controller.*
+  <a href="https://arxiv.org/abs/2609.18869"><img src="https://img.shields.io/badge/arxiv-2609.18869-silver" alt="Paper"></a>
 - AnchorVLN: Geometry-Anchored Vision-Language Grounding Reasoning for Open-Vocabulary Navigation
   <a href="https://arxiv.org/abs/2609.12285"><img src="https://img.shields.io/badge/arxiv-2609.12285-silver" alt="Paper"></a>
   <a href="https://github.com/aryanmangal769/embodied-nav-mcp"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -224,7 +245,8 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
-
+- Bridging Thought and Action: Taming Long-Horizon Instability in Open-Source LLM Agents with a MetaTool-Enhanced ROS Framework
+  <a href="https://arxiv.org/abs/2609.13335"><img src="https://img.shields.io/badge/arxiv-2609.13335-silver" alt="Paper"></a>
 - 2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation
   <a href="https://arxiv.org/abs/2609.11308"><img src="https://img.shields.io/badge/arxiv-2609.11308-silver" alt="Paper"></a>
 - Memory as Plans: World-Action Modeling with Memory-Grounded Planning
@@ -282,7 +304,10 @@ Methods that assess risks, verify execution, and trigger corrective planning or 
 #### Multi-Robot Coordination
 
 Task allocation, communication, and organizational structures for teams of robots or embodied agents. ORCH is evaluated in simulation; system-level runtimes are listed under [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes).
-
+- AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution — *Simulation.*
+  <a href="https://arxiv.org/abs/2609.18520"><img src="https://img.shields.io/badge/arxiv-2609.18520-silver" alt="Paper"></a>
+  <a href="https://github.com/Admire-ljb/AeroWeaver"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Admire-ljb/AeroWeaver"><img src="https://img.shields.io/github/stars/Admire-ljb/AeroWeaver" alt="stars"></a>
 - ORCH: Organizational Principles Enable Collective Intelligence in Embodied AI
   <a href="https://arxiv.org/abs/2609.11737"><img src="https://img.shields.io/badge/arxiv-2609.11737-silver" alt="Paper"></a>
 - RoCo: Dialectic Multi-Robot Collaboration with Large Language Models
@@ -329,6 +354,8 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 ### Infrastructure and Benchmarks
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
+- Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method — *AGOS; simulated aerial-ground collaboration.*
+  <a href="https://arxiv.org/abs/2609.08402"><img src="https://img.shields.io/badge/arxiv-2609.08402-silver" alt="Paper"></a>
 - FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence — *Engineering platform.*
   <a href="https://arxiv.org/abs/2609.17210"><img src="https://img.shields.io/badge/arxiv-2609.17210-silver" alt="Paper"></a>
   <a href="https://github.com/FluxVLA/FluxVLA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
