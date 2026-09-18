@@ -324,6 +324,11 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
 - Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
   <a href="https://arxiv.org/abs/2204.01691"><img src="https://img.shields.io/badge/arxiv-2204.01691-silver" alt="Paper"></a>
   <a href="https://say-can.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- SayCanPay: Heuristic Planning with Large Language Models using Learnable Domain Knowledge — *Offline action-sequence search; simulation evaluation.*
+  <a href="https://arxiv.org/abs/2308.12682"><img src="https://img.shields.io/badge/arxiv-2308.12682-silver" alt="Paper"></a>
+  <a href="https://rishihazra.github.io/SayCanPay/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/RishiHazra/saycanpay"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/RishiHazra/saycanpay"><img src="https://img.shields.io/github/stars/RishiHazra/saycanpay" alt="stars"></a>
 - Inner Monologue: Embodied Reasoning through Planning with Language Models
   <a href="https://arxiv.org/abs/2207.05608"><img src="https://img.shields.io/badge/arxiv-2207.05608-silver" alt="Paper"></a>
   <a href="https://innermonologue.github.io"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -362,6 +367,10 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
   <a href="https://arxiv.org/abs/2402.18796"><img src="https://img.shields.io/badge/arxiv-2402.18796-silver" alt="Paper"></a>
   <a href="https://portal-cornell.github.io/MOSAIC/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 
+- Creative Robot Tool Use with Large Language Models — *RoboTool; executable plans over parameterized skills.*
+  <a href="https://arxiv.org/abs/2310.13065"><img src="https://img.shields.io/badge/arxiv-2310.13065-silver" alt="Paper"></a>
+  <a href="https://creative-robotool.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+
 #### Safe Planning, Verification and Failure Recovery
 
 Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
@@ -391,6 +400,11 @@ Methods that assess risks, verify execution, and trigger corrective planning or 
   <a href="https://aha-vlm.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
   <a href="https://github.com/NVlabs/AHA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/NVlabs/AHA"><img src="https://img.shields.io/github/stars/NVlabs/AHA" alt="stars"></a>
+
+- Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners — *KnowNo; calibrated uncertainty and human clarification.*
+  <a href="https://arxiv.org/abs/2307.01928"><img src="https://img.shields.io/badge/arxiv-2307.01928-silver" alt="Paper"></a>
+  <a href="https://robot-help.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/google-research/google-research/tree/master/language_model_uncertainty"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
 
 #### Multi-Robot Coordination
 
@@ -492,6 +506,8 @@ Robot integration, deployment, latency, runtime reliability, and evaluation of m
   <a href="https://arxiv.org/abs/2410.06472"><img src="https://img.shields.io/badge/arxiv-2410.06472-silver" alt="Paper"></a>
   <a href="https://github.com/nasa-jpl/rosa"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/nasa-jpl/rosa"><img src="https://img.shields.io/github/stars/nasa-jpl/rosa" alt="stars"></a>
+- RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation — *ROS-based deployment and code-generation benchmark.*
+  <a href="https://arxiv.org/abs/2402.14623"><img src="https://img.shields.io/badge/arxiv-2402.14623-silver" alt="Paper"></a>
 - SPINE: Bridging the Cyber-Physical Gap with Agentic AI
   <a href="https://arxiv.org/abs/2607.13049"><img src="https://img.shields.io/badge/arxiv-2607.13049-silver" alt="Paper"></a>
 - Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer
