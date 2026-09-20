@@ -97,6 +97,8 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- Learning and Transferring Closed-Loop Robot Software — *Coding-agent optimization and reuse of closed-loop robot programs in simulation.*
+  <a href="https://arxiv.org/abs/2609.19906"><img src="https://img.shields.io/badge/arxiv-2609.19906-silver" alt="Paper"></a>
 - Self-Evolving Embodied Agents via Skill-Harness Evolution — *SHAPER; frozen-model skill and harness optimization.*
   <a href="https://arxiv.org/abs/2608.11350"><img src="https://img.shields.io/badge/arxiv-2608.11350-silver" alt="Paper"></a>
 - ASPIRE: Agentic /Skills Discovery for Robotics
@@ -119,7 +121,10 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
-
+- MAGMA-GEN: Validated Recovery Supervision from Ambiguous Failures via Counterfactual Re-Execution — *Simulation-validated recovery data for fine-tuning tool-using robot language policies.*
+  <a href="https://arxiv.org/abs/2609.20056"><img src="https://img.shields.io/badge/arxiv-2609.20056-silver" alt="Paper"></a>
+  <a href="https://github.com/MAGMA-rob/magma-gen"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/MAGMA-rob/magma-gen"><img src="https://img.shields.io/github/stars/MAGMA-rob/magma-gen" alt="stars"></a>
 - RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks
   <a href="https://arxiv.org/abs/2603.11558"><img src="https://img.shields.io/badge/arxiv-2603.11558-silver" alt="Paper"></a>
   <a href="https://roboclaw-agibot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -228,7 +233,8 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 Code, visual prompts, geometric constraints, and other interfaces that connect model reasoning to robot execution.
 - ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts
   <a href="https://arxiv.org/abs/2609.16331"><img src="https://img.shields.io/badge/arxiv-2609.16331-silver" alt="Paper"></a>
-
+- AntiGrounding: Executable Robot Trajectories as Visual Prompts for VLM-Guided Manipulation — *VLM selection of executable trajectories through a visual interface and an initialized digital twin.*
+  <a href="https://arxiv.org/abs/2506.12374"><img src="https://img.shields.io/badge/arxiv-2506.12374-silver" alt="Paper"></a>
 - Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation — *Human-in-the-loop interface.*
   <a href="https://arxiv.org/abs/2609.16346"><img src="https://img.shields.io/badge/arxiv-2609.16346-silver" alt="Paper"></a>
 - KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation — *Learned low-level controller.*
@@ -310,6 +316,11 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration — *Natural-language skill orchestration, sensor-event binding, and dialogue-state management on a physical social robot.*
+  <a href="https://arxiv.org/abs/2608.15549"><img src="https://img.shields.io/badge/arxiv-2608.15549-silver" alt="Paper"></a>
+  <a href="https://wangxiaoshawn.github.io/MistyPilot.html"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/WangXiaoShawn/MistyPilot"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/WangXiaoShawn/MistyPilot"><img src="https://img.shields.io/github/stars/WangXiaoShawn/MistyPilot" alt="stars"></a>
 - Bridging Thought and Action: Taming Long-Horizon Instability in Open-Source LLM Agents with a MetaTool-Enhanced ROS Framework
   <a href="https://arxiv.org/abs/2609.13335"><img src="https://img.shields.io/badge/arxiv-2609.13335-silver" alt="Paper"></a>
 - 2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation
@@ -374,7 +385,10 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
 #### Safe Planning, Verification and Failure Recovery
 
 Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
-
+- Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation — *SafeHarness; obstacle-aware route verification, replanning, and contact execution, evaluated in simulation.*
+  <a href="https://arxiv.org/abs/2609.20822"><img src="https://img.shields.io/badge/arxiv-2609.20822-silver" alt="Paper"></a>
+- GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning — *Graph-based plan verification and repair under partial observability; evaluated primarily with a symbolic executor.*
+  <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arxiv-2609.19315-silver" alt="Paper"></a>
 - Safe Task Planning with Long-Term Graph Memory for Embodied Agents
   <a href="https://arxiv.org/abs/2609.08444"><img src="https://img.shields.io/badge/arxiv-2609.08444-silver" alt="Paper"></a>
   <a href="https://sites.google.com/view/safemem"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -474,6 +488,12 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 ### Infrastructure and Benchmarks
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
+- From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation — *HALTER; scene-graph-based evaluation, reset planning, and reset verification on a physical robot.*
+  <a href="https://arxiv.org/abs/2609.19413"><img src="https://img.shields.io/badge/arxiv-2609.19413-silver" alt="Paper"></a>
+- VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control — *Simulation benchmark for general-purpose MLLMs using active camera control, Cartesian action commands, and execution feedback.*
+  <a href="https://arxiv.org/abs/2609.19554"><img src="https://img.shields.io/badge/arxiv-2609.19554-silver" alt="Paper"></a>
+  <a href="https://github.com/zhangzhongbo2213/VABench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/zhangzhongbo2213/VABench"><img src="https://img.shields.io/github/stars/zhangzhongbo2213/VABench" alt="stars"></a>
 - Towards Embodied Air-Ground Cooperative Object Search: Benchmark, Dataset and Agentic Method — *AGOS; simulated aerial-ground collaboration.*
   <a href="https://arxiv.org/abs/2609.08402"><img src="https://img.shields.io/badge/arxiv-2609.08402-silver" alt="Paper"></a>
 - FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence — *Engineering platform.*
