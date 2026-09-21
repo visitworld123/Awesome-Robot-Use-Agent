@@ -29,6 +29,12 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- RoboFind: Multi-Agent Personalized Object Search for People Who Are Blind or Have Low Vision 
+  <a href="https://arxiv.org/abs/2609.20330"><img src="https://img.shields.io/badge/arxiv-2609.20330-silver" alt="Paper"></a>
+
+- Navi-Agent: Unlocalized Monocular Navigation Agent — *Previously reported; coordinate-free spatial memory for closed-loop navigation, progress verification and recovery.*
+  <a href="https://arxiv.org/abs/2609.20388"><img src="https://img.shields.io/badge/arxiv-2609.20388-silver" alt="Paper"></a>
+
 - In-Context Robot Learning with VLM Agents — *GPT-Policy; in-context adaptation without parameter updates.*
   <a href="https://arxiv.org/abs/2609.19138"><img src="https://img.shields.io/badge/arxiv-2609.19138-silver" alt="Paper"></a>
   <a href="https://cheng-haha.github.io/GPT-Policy/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -121,6 +127,9 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- KnowDemo: Knowledge-Guided Robot Demonstration Generation from Human Videos — *VLM-based task-knowledge extraction for generating diverse, validated robot demonstrations.*
+  <a href="https://arxiv.org/abs/2609.21229"><img src="https://img.shields.io/badge/arxiv-2609.21229-silver" alt="Paper"></a>
+  <a href="https://zhiyuan-gao.github.io/knowdemo/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - MAGMA-GEN: Validated Recovery Supervision from Ambiguous Failures via Counterfactual Re-Execution — *Simulation-validated recovery data for fine-tuning tool-using robot language policies.*
   <a href="https://arxiv.org/abs/2609.20056"><img src="https://img.shields.io/badge/arxiv-2609.20056-silver" alt="Paper"></a>
   <a href="https://github.com/MAGMA-rob/magma-gen"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -385,9 +394,15 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
 #### Safe Planning, Verification and Failure Recovery
 
 Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
+- CommitFlow: Semantic Commitment Verification and Local Correction for Long-Horizon Robot Manipulation VLA Execution — *Frozen-policy execution harness with semantic commitment monitoring, local correction and stage-level verification.*
+  <a href="https://arxiv.org/abs/2609.21908"><img src="https://img.shields.io/badge/arxiv-2609.21908-silver" alt="Paper"></a>
+
+- When Should a Failing Robot Ask? Initiating Corrective Human-Robot Dialogue from Audited Sensor Evidence — *Evidence-aware choice between autonomous action, additional sensing and human assistance after failure.*
+  <a href="https://arxiv.org/abs/2609.21942"><img src="https://img.shields.io/badge/arxiv-2609.21942-silver" alt="Paper"></a>
+
 - Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation — *SafeHarness; obstacle-aware route verification, replanning, and contact execution, evaluated in simulation.*
   <a href="https://arxiv.org/abs/2609.20822"><img src="https://img.shields.io/badge/arxiv-2609.20822-silver" alt="Paper"></a>
-- GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning — *Graph-based plan verification and repair under partial observability; evaluated primarily with a symbolic executor.*
+- GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning 
   <a href="https://arxiv.org/abs/2609.19315"><img src="https://img.shields.io/badge/arxiv-2609.19315-silver" alt="Paper"></a>
 - Safe Task Planning with Long-Term Graph Memory for Embodied Agents
   <a href="https://arxiv.org/abs/2609.08444"><img src="https://img.shields.io/badge/arxiv-2609.08444-silver" alt="Paper"></a>
