@@ -15,6 +15,7 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ## Contents
 
 - [General-Purpose Robot-Use Agents](#general-purpose-robot-use-agents)
+- [Reasoning-Acting and Dual-System Architectures](#reasoning-acting-and-dual-system-architectures)
 - [Self-Evolving Robot Agents](#self-evolving-robot-agents)
 - [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes)
 - [Programming and Spatial Action Interfaces](#programming-and-spatial-action-interfaces)
@@ -84,6 +85,47 @@ General-purpose models operating robots through reusable harnesses, tools, and v
 - Maestro: Orchestrating Robotics Modules with Vision-Language Models for Zero-Shot Generalist Robots
   <a href="https://arxiv.org/abs/2511.00917"><img src="https://img.shields.io/badge/arxiv-2511.00917-silver" alt="Paper"></a>
   <a href="https://maestro-robot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+
+### Reasoning-Acting and Dual-System Architectures
+
+Architectures that organize reasoning and robot execution through intermediate plans, coupled reasoning and action modules, or adaptive think/act scheduling. Includes learned-policy building blocks and agent-level systems. For author-described System 1/System 2 models, fixed-rate and asynchronous coupling are distinguished from adaptive reasoning. Related task-time memory and recovery methods remain under [Planning, Skill Orchestration and Memory](#planning-skill-orchestration-and-memory).
+
+- DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation — *System 1 WAM execution with an optional System 2 subtask planner; video co-training without future-video generation at inference.*
+  <a href="https://arxiv.org/abs/2607.04927"><img src="https://img.shields.io/badge/arxiv-2607.04927-silver" alt="Paper"></a>
+  <a href="https://ds-wam.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Fast-ThinkAct: Efficient Vision-Language-Action Reasoning via Verbalizable Latent Planning — *Preference-guided distillation compresses reasoning into verbalizable latents for action policies; evaluated in simulation and embodied reasoning benchmarks.*
+  <a href="https://arxiv.org/abs/2601.09708"><img src="https://img.shields.io/badge/arxiv-2601.09708-silver" alt="Paper"></a>
+  <a href="https://jasper0314-huang.github.io/fast-thinkact/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning — *Action-aligned reinforcement learning connects a vision-language reasoner to a diffusion policy through visual plan latents; simulation evaluation.*
+  <a href="https://arxiv.org/abs/2507.16815"><img src="https://img.shields.io/badge/arxiv-2507.16815-silver" alt="Paper"></a>
+  <a href="https://jasper0314-huang.github.io/thinkact-vla/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning — *Partially shared System 1/System 2 parameters with asynchronous observations and action generation; simulation and real-robot evaluation.*
+  <a href="https://arxiv.org/abs/2506.01953"><img src="https://img.shields.io/badge/arxiv-2506.01953-silver" alt="Paper"></a>
+  <a href="https://fast-in-slow.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/CHEN-H01/Fast-in-Slow"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/CHEN-H01/Fast-in-Slow"><img src="https://img.shields.io/github/stars/CHEN-H01/Fast-in-Slow" alt="stars"></a>
+- Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents — *Planner–executor–verifier coordination with subgoal verification and recovery; evaluated on LIBERO.*
+  <a href="https://arxiv.org/abs/2505.23450"><img src="https://img.shields.io/badge/arxiv-2505.23450-silver" alt="Paper"></a>
+  <a href="https://agentic-robot.github.io"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/Agentic-Robot/agentic-robot"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Agentic-Robot/agentic-robot"><img src="https://img.shields.io/github/stars/Agentic-Robot/agentic-robot" alt="stars"></a>
+- OneTwoVLA: A Unified Vision-Language-Action Model with Adaptive Reasoning — *A unified VLA predicts reasoning or action mode tokens to think at critical moments and otherwise execute action chunks.*
+  <a href="https://arxiv.org/abs/2505.11917"><img src="https://img.shields.io/badge/arxiv-2505.11917-silver" alt="Paper"></a>
+  <a href="https://one-two-vla.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/Fanqi-Lin/OneTwoVLA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Fanqi-Lin/OneTwoVLA"><img src="https://img.shields.io/github/stars/Fanqi-Lin/OneTwoVLA" alt="stars"></a>
+- GR00T N1: An Open Foundation Model for Generalist Humanoid Robots — *An Eagle-2 vision-language System 2 conditions a flow-matching System 1 action module, jointly trained across heterogeneous data.*
+  <a href="https://arxiv.org/abs/2503.14734"><img src="https://img.shields.io/badge/arxiv-2503.14734-silver" alt="Paper"></a>
+  <a href="https://github.com/NVIDIA/Isaac-GR00T/tree/n1-release"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/NVIDIA/Isaac-GR00T"><img src="https://img.shields.io/github/stars/NVIDIA/Isaac-GR00T" alt="stars"></a>
+- Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models — *A high-level VLM guides a low-level VLA through language; planning refreshes periodically and on user feedback.*
+  <a href="https://arxiv.org/abs/2502.19417"><img src="https://img.shields.io/badge/arxiv-2502.19417-silver" alt="Paper"></a>
+  <a href="https://www.pi.website/research/hirobot"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Robotic Control via Embodied Chain-of-Thought Reasoning — *ECoT; a VLA reasons about plans, sub-tasks, motion and visually grounded state before predicting robot actions.*
+  <a href="https://arxiv.org/abs/2407.08693"><img src="https://img.shields.io/badge/arxiv-2407.08693-silver" alt="Paper"></a>
+  <a href="https://embodied-cot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/MichalZawalski/embodied-CoT"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/MichalZawalski/embodied-CoT"><img src="https://img.shields.io/github/stars/MichalZawalski/embodied-CoT" alt="stars"></a>
 
 ### Self-Evolving Robot Agents
 
@@ -325,6 +367,13 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed under [Reasoning-Acting and Dual-System Architectures](#reasoning-acting-and-dual-system-architectures).
+
+- World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models — *VLM action plans are refined through action-conditioned world-model imagination, optimization and search; simulation evaluation.*
+  <a href="https://arxiv.org/abs/2607.27599"><img src="https://img.shields.io/badge/arxiv-2607.27599-silver" alt="Paper"></a>
+  <a href="https://worldactionplanner.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/XiangchengZhang/world-action-planner"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/XiangchengZhang/world-action-planner"><img src="https://img.shields.io/github/stars/XiangchengZhang/world-action-planner" alt="stars"></a>
 - MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration — *Natural-language skill orchestration, sensor-event binding, and dialogue-state management on a physical social robot.*
   <a href="https://arxiv.org/abs/2608.15549"><img src="https://img.shields.io/badge/arxiv-2608.15549-silver" alt="Paper"></a>
   <a href="https://wangxiaoshawn.github.io/MistyPilot.html"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -370,19 +419,11 @@ Task decomposition, reusable skill orchestration, and task-time memory. Includes
   <a href="https://harnessvla.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
   <a href="https://github.com/RLinf/RPent"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/RLinf/RPent"><img src="https://img.shields.io/github/stars/RLinf/RPent" alt="stars"></a>
-- Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models
-  <a href="https://arxiv.org/abs/2502.19417"><img src="https://img.shields.io/badge/arxiv-2502.19417-silver" alt="Paper"></a>
-  <a href="https://www.pi.website/research/hirobot"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills
   <a href="https://arxiv.org/abs/2503.12533"><img src="https://img.shields.io/badge/arxiv-2503.12533-silver" alt="Paper"></a>
   <a href="https://beingbeyond.github.io/Being-0"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
   <a href="https://github.com/BeingBeyond/Being-0"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/BeingBeyond/Being-0"><img src="https://img.shields.io/github/stars/BeingBeyond/Being-0" alt="stars"></a>
-- Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents
-  <a href="https://arxiv.org/abs/2505.23450"><img src="https://img.shields.io/badge/arxiv-2505.23450-silver" alt="Paper"></a>
-  <a href="https://agentic-robot.github.io"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
-  <a href="https://github.com/Agentic-Robot/agentic-robot"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
-  <a href="https://github.com/Agentic-Robot/agentic-robot"><img src="https://img.shields.io/github/stars/Agentic-Robot/agentic-robot" alt="stars"></a>
 - MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking
   <a href="https://arxiv.org/abs/2402.18796"><img src="https://img.shields.io/badge/arxiv-2402.18796-silver" alt="Paper"></a>
   <a href="https://portal-cornell.github.io/MOSAIC/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
