@@ -30,6 +30,8 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- Transferring the Intelligence of VLMs to Robotic Control — *RoboDawn*
+  <a href="https://robodawn.top/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - RoboFind: Multi-Agent Personalized Object Search for People Who Are Blind or Have Low Vision 
   <a href="https://arxiv.org/abs/2609.20330"><img src="https://img.shields.io/badge/arxiv-2609.20330-silver" alt="Paper"></a>
 
