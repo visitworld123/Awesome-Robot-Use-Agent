@@ -30,6 +30,11 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation — *Agent-ready manipulation through visual grounding, operation tokens, and `detect` / `execute` / `query` interfaces.*
+  <a href="https://arxiv.org/abs/2609.23578"><img src="https://img.shields.io/badge/arxiv-2609.23578-silver" alt="Paper"></a>
+
+- Structured World-State Reasoning for Agentic Robotic Search — *WORLDS maintains a persistent world-state graph and lets agents request, verify, and revise observations before selecting a target.*
+  <a href="https://arxiv.org/abs/2609.23841"><img src="https://img.shields.io/badge/arxiv-2609.23841-silver" alt="Paper"></a>
 - Transferring the Intelligence of VLMs to Robotic Control — *RoboDawn*
   <a href="https://robodawn.top/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - RoboFind: Multi-Agent Personalized Object Search for People Who Are Blind or Have Low Vision 
@@ -437,6 +442,8 @@ Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed
 #### Safe Planning, Verification and Failure Recovery
 
 Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
+- FRAMES: Failure Recovery And Monitoring of Embodied Skills for Humanoid Loco-Manipulation — *A planner, VLM monitor, recovery agent, and memory module form a failure-aware supervisory loop for humanoid skills.*
+  <a href="https://arxiv.org/abs/2609.22538"><img src="https://img.shields.io/badge/arxiv-2609.22538-silver" alt="Paper"></a>
 - CommitFlow: Semantic Commitment Verification and Local Correction for Long-Horizon Robot Manipulation VLA Execution — *Frozen-policy execution harness with semantic commitment monitoring, local correction and stage-level verification.*
   <a href="https://arxiv.org/abs/2609.21908"><img src="https://img.shields.io/badge/arxiv-2609.21908-silver" alt="Paper"></a>
 
@@ -544,6 +551,23 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
   <a href="https://arxiv.org/abs/2606.26025"><img src="https://img.shields.io/badge/arxiv-2606.26025-silver" alt="Paper"></a>
 
 ### Infrastructure and Benchmarks
+Jev+Robot
+- robo-jev: A 10 Hz Typed-Decision Layer for Physical Robots — *A System-One-style decision layer that scores typed robot actions, stop conditions, gripper states, paths, speed, and force for a deterministic executor.*
+  <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/github/stars/STEERIX-home/robo-jev" alt="stars"></a>
+
+- EmbodiedJev: MuJoCo Robot Decision Workbench — *Browser-based MuJoCo and Franka Panda workbench supporting Jev, Claude, OpenAI-compatible APIs, and local MiniCPM models with visible observe–decide–execute–feedback loops.*
+  <a href="https://github.com/FBddcz/embodied-jev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/FBddcz/embodied-jev"><img src="https://img.shields.io/github/stars/FBddcz/embodied-jev" alt="stars"></a>
+
+- RoboJEV: Two-Stage JEV Control of a Franka Panda in MuJoCo — *Two-stage typed decisions for task intent followed by Cartesian motion and gripper commands, evaluated with independent physical success checks.*
+  <a href="https://github.com/lykycy123/RoboJEV"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/lykycy123/RoboJEV"><img src="https://img.shields.io/github/stars/lykycy123/RoboJEV" alt="stars"></a>
+
+- Jev Robot Control — *Reproducible xArm7 MuJoCo comparison of Jev, GPT-6 Astra, and GPT-4.1 mini with archived trajectories, offline verification, and replay.*
+  <a href="https://github.com/openroboto-ai/jev-robot-control"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/openroboto-ai/jev-robot-control"><img src="https://img.shields.io/github/stars/openroboto-ai/jev-robot-control" alt="stars"></a>
+
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
 - From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation — *HALTER; scene-graph-based evaluation, reset planning, and reset verification on a physical robot.*
