@@ -1,5 +1,5 @@
 # Awesome-Robot-Use-Agent
-
+News: We add many jev+robot demos in [Infrastructure and Benchmarks](#infrastructure-and-benchmarks)! Please refer these.
 <p align="center">
   <img src="Assets/wordmark-dark.png" alt="Awesome Robot Use Agent" width="500">
 </p>
