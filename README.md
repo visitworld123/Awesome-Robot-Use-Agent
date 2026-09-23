@@ -30,6 +30,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- Generalizing Manipulation Skills with a Local Coding Agent — *A local open-weight VLM writes and executes perception and control code for real-world UR3e manipulation, with documented skills and in-session reuse.*
+  <a href="https://arxiv.org/abs/2609.26499"><img src="https://img.shields.io/badge/arxiv-2609.26499-silver" alt="Paper"></a>
+  <a href="https://rtalwar2.github.io/agentic-coding-for-robot-manipulation/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - AR-WAM: A Visual-Conditioned Agent-Ready World Action Model for Robotic Manipulation — *Agent-ready manipulation through visual grounding, operation tokens, and `detect` / `execute` / `query` interfaces.*
   <a href="https://arxiv.org/abs/2609.23578"><img src="https://img.shields.io/badge/arxiv-2609.23578-silver" alt="Paper"></a>
 
@@ -241,6 +244,10 @@ Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
+- NIMO Controller: a self-driving laboratory orchestrator based on the Model Context Protocol — *MCP-based tool discovery and experimental workflow orchestration for AI agents and human users in self-driving laboratories.*
+  <a href="https://arxiv.org/abs/2605.15227"><img src="https://img.shields.io/badge/arxiv-2605.15227-silver" alt="Paper"></a>
+  <a href="https://github.com/NIMS-DA/nimo-controller"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/NIMS-DA/nimo-controller"><img src="https://img.shields.io/github/stars/NIMS-DA/nimo-controller" alt="stars"></a>
 - Retriever: Composing the Perception-Reasoning-Action Loop for Long-Horizon Manipulation — *Asynchronous runtime and deterministic replay.*
   <a href="https://arxiv.org/abs/2607.17213"><img src="https://img.shields.io/badge/arxiv-2607.17213-silver" alt="Paper"></a>
   <a href="https://retriever.systems"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -552,6 +559,7 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 
 ### Infrastructure and Benchmarks
 Jev+Robot
+
 - robo-jev: A 10 Hz Typed-Decision Layer for Physical Robots — *A System-One-style decision layer that scores typed robot actions, stop conditions, gripper states, paths, speed, and force for a deterministic executor.*
   <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/github/stars/STEERIX-home/robo-jev" alt="stars"></a>
