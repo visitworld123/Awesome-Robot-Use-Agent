@@ -244,6 +244,8 @@ Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
+- RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement — *Evidence-gated skill execution, versioned task state, bounded recovery, and a protocol for regression-checked harness configuration updates; demonstrated through quadruped inspection cases.*
+  <a href="https://arxiv.org/abs/2609.27612"><img src="https://img.shields.io/badge/arxiv-2609.27612-silver" alt="Paper"></a>
 - NIMO Controller: a self-driving laboratory orchestrator based on the Model Context Protocol — *MCP-based tool discovery and experimental workflow orchestration for AI agents and human users in self-driving laboratories.*
   <a href="https://arxiv.org/abs/2605.15227"><img src="https://img.shields.io/badge/arxiv-2605.15227-silver" alt="Paper"></a>
   <a href="https://github.com/NIMS-DA/nimo-controller"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -382,7 +384,8 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
 Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed under [Reasoning-Acting and Dual-System Architectures](#reasoning-acting-and-dual-system-architectures).
-
+- NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation — *A hierarchical VLM navigation agent that retrieves visual and geometric evidence to revise subgoals and select parameterized navigation skills.*
+  <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arxiv-2609.27526-silver" alt="Paper"></a>
 - World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models — *VLM action plans are refined through action-conditioned world-model imagination, optimization and search; simulation evaluation.*
   <a href="https://arxiv.org/abs/2607.27599"><img src="https://img.shields.io/badge/arxiv-2607.27599-silver" alt="Paper"></a>
   <a href="https://worldactionplanner.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -578,6 +581,11 @@ Jev+Robot
 
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
+- EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics — *A simulation benchmark for coding agents and a pipeline that diversifies verified solutions into demonstrations for robot policy learning.*
+  <a href="https://arxiv.org/abs/2609.27308"><img src="https://img.shields.io/badge/arxiv-2609.27308-silver" alt="Paper"></a>
+  <a href="https://embodiedswe.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/EmbodiedSWE/EmbodiedSWE"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/EmbodiedSWE/EmbodiedSWE"><img src="https://img.shields.io/github/stars/EmbodiedSWE/EmbodiedSWE" alt="stars"></a>
 - From Rollout to Reset: A Graph-Based Harness for Autonomous Long-Horizon Manipulation Evaluation — *HALTER; scene-graph-based evaluation, reset planning, and reset verification on a physical robot.*
   <a href="https://arxiv.org/abs/2609.19413"><img src="https://img.shields.io/badge/arxiv-2609.19413-silver" alt="Paper"></a>
 - VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control — *Simulation benchmark for general-purpose MLLMs using active camera control, Cartesian action commands, and execution feedback.*
