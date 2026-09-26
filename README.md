@@ -30,6 +30,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- **Know Your Body: A Harness for Direct and Self-Improving Robot Control with VLMs** — KnowBody; body-grounded robot control and iterative improvement through execution feedback, evaluated on a small real-robot task suite.
+  <a href="https://arxiv.org/abs/2609.28530"><img src="https://img.shields.io/badge/arxiv-2609.28530-silver" alt="Paper"></a>
+  <a href="https://loule0-0.github.io/KnowBody/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Generalizing Manipulation Skills with a Local Coding Agent — *A local open-weight VLM writes and executes perception and control code for real-world UR3e manipulation, with documented skills and in-session reuse.*
   <a href="https://arxiv.org/abs/2609.26499"><img src="https://img.shields.io/badge/arxiv-2609.26499-silver" alt="Paper"></a>
   <a href="https://rtalwar2.github.io/agentic-coding-for-robot-manipulation/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -155,6 +158,16 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- HarnessPAI: An Evolving Harness for Physical AI — Coding agents refine executable robot harnesses between rollouts using execution feedback, while keeping the underlying action backends frozen.
+  <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arxiv-2609.29166-silver" alt="Paper"></a>
+
+- RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning — Combines reasoning, acting, and code evolution to build reusable robot APIs and harness memory; evaluated in simulation.
+  <a href="https://arxiv.org/abs/2609.29394"><img src="https://img.shields.io/badge/arxiv-2609.29394-silver" alt="Paper"></a>
+
+- AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution — Refines code-based coordination between reasoning agents and frozen VLAs through rollout evidence and persistent revision memory; simulation benchmarks and a real-world quadruped deployment case.
+  <a href="https://arxiv.org/abs/2609.29204"><img src="https://img.shields.io/badge/arxiv-2609.29204-silver" alt="Paper"></a>
+  <a href="https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA"><img src="https://img.shields.io/github/stars/Haaareally/AdaHVLA-Adaptive_Harness_VLA" alt="stars"></a>
 - Learning and Transferring Closed-Loop Robot Software — *Coding-agent optimization and reuse of closed-loop robot programs in simulation.*
   <a href="https://arxiv.org/abs/2609.19906"><img src="https://img.shields.io/badge/arxiv-2609.19906-silver" alt="Paper"></a>
 - Self-Evolving Embodied Agents via Skill-Harness Evolution — *SHAPER; frozen-model skill and harness optimization.*
@@ -297,9 +310,17 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 
 ### Programming and Spatial Action Interfaces
 
-Code, visual prompts, geometric constraints, and other interfaces that connect model reasoning to robot execution.
-- ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts
+- **RAPID: Robot Agentic Programming from Demonstrations** — Converts visual demonstrations into robot programs through task specifications, reusable primitives, and interactive verification.
+  <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arxiv-2609.30249-silver" alt="Paper"></a>
+
+- **Coding Agents for Generalized Task and Motion Planning Problems** — Coding agents synthesize reusable planning programs for simulated environments; held-out evaluation executes fixed programs without test-time LLM calls.
+  <a href="https://arxiv.org/abs/2609.30233"><img src="https://img.shields.io/badge/arxiv-2609.30233-silver" alt="Paper"></a>
+  <a href="https://agenticgentamp.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/tomsilver/robocode"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/tomsilver/robocode"><img src="https://img.shields.io/github/stars/tomsilver/robocode" alt="stars"></a>
+- ManiSkillFormer: Demonstration-Free Compositional Manipulation via Geometric Contracts and Agentic Skill Graph
   <a href="https://arxiv.org/abs/2609.16331"><img src="https://img.shields.io/badge/arxiv-2609.16331-silver" alt="Paper"></a>
+  <a href="https://patricia1019.github.io/ManiSkillFormer/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - AntiGrounding: Executable Robot Trajectories as Visual Prompts for VLM-Guided Manipulation — *VLM selection of executable trajectories through a visual interface and an initialized digital twin.*
   <a href="https://arxiv.org/abs/2506.12374"><img src="https://img.shields.io/badge/arxiv-2506.12374-silver" alt="Paper"></a>
 - Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation — *Human-in-the-loop interface.*
