@@ -1,4 +1,6 @@
-# Awesome-Robot-Use-Agent
+- Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language — *CLUE; an LLM agent resolves ambiguous goals through map queries, inspection, navigation, and manipulation skills, with closed-loop evaluation on a physical Spot robot.*
+  <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arxiv-2609.30428-silver" alt="Paper"></a>
+  <a href="https://zacravichandran.github.io/CLUE/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a># Awesome-Robot-Use-Agent
 News: We add many jev+robot demos in [Infrastructure and Benchmarks](#infrastructure-and-benchmarks)! Please refer these.
 <p align="center">
   <img src="Assets/wordmark-dark.png" alt="Awesome Robot Use Agent" width="500">
@@ -310,6 +312,9 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
 
 ### Programming and Spatial Action Interfaces
 
+- CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation — *An LLM routes language and spatial references to typed tools and robot missions over a shared semantic map, with operator confirmation and physical quadruped evaluation.*
+  <a href="https://arxiv.org/abs/2609.31418"><img src="https://img.shields.io/badge/arxiv-2609.31418-silver" alt="Paper"></a>
+
 - **RAPID: Robot Agentic Programming from Demonstrations** — Converts visual demonstrations into robot programs through task specifications, reusable primitives, and interactive verification.
   <a href="https://arxiv.org/abs/2609.30249"><img src="https://img.shields.io/badge/arxiv-2609.30249-silver" alt="Paper"></a>
 
@@ -405,6 +410,9 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
 Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed under [Reasoning-Acting and Dual-System Architectures](#reasoning-acting-and-dual-system-architectures).
+- Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language — *CLUE; an LLM agent resolves ambiguous goals through map queries, inspection, navigation, and manipulation skills, with closed-loop evaluation on a physical Spot robot.*
+  <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arxiv-2609.30428-silver" alt="Paper"></a>
+  <a href="https://zacravichandran.github.io/CLUE/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - NavProbe: Evidence-Grounded Reasoning with Active Memory Retrieval for Zero-Shot Navigation — *A hierarchical VLM navigation agent that retrieves visual and geometric evidence to revise subgoals and select parameterized navigation skills.*
   <a href="https://arxiv.org/abs/2609.27526"><img src="https://img.shields.io/badge/arxiv-2609.27526-silver" alt="Paper"></a>
 - World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models — *VLM action plans are refined through action-conditioned world-model imagination, optimization and search; simulation evaluation.*
