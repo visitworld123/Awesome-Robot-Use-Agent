@@ -89,7 +89,7 @@ General-purpose models operating robots through reusable harnesses, tools, and v
   <a href="https://capgym.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
   <a href="https://github.com/capgym/cap-x"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/capgym/cap-x"><img src="https://img.shields.io/github/stars/capgym/cap-x" alt="stars"></a>
-- Guava: An Effective and Universal Harness for Embodied Manipulation
+- Guava: Distilling Frontier VLM Agents into a Compact Model with a Manipulation Harness
   <a href="https://arxiv.org/abs/2606.18363"><img src="https://img.shields.io/badge/arxiv-2606.18363-silver" alt="Paper"></a>
   <a href="https://guava-harness.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - ETA: A New Agentic Paradigm for Embodied Tasks
@@ -147,6 +147,13 @@ Architectures that organize reasoning and robot execution through intermediate p
 Systems that turn experience into reusable knowledge, skill programs, improved policies, or validated capability upgrades. Includes human-guided methods and learned-policy precursors where noted.
 
 #### Memory and Knowledge Evolution
+- Recursive Harness Distillation across Agents for Robot Manipulation — *A strong agent distills and refines intervention experience into a reusable playbook for lighter agents operating frozen robot policies; evaluated in simulation and real-world manipulation.*
+  <a href="https://arxiv.org/abs/2609.33378"><img src="https://img.shields.io/badge/arxiv-2609.33378-silver" alt="Paper"></a>
+
+- NavHarness: Towards Lifelong Embodied Navigation — *A training-free navigation harness that carries maps, task records, recovery handovers, and consolidated knowledge across reasoning sessions; evaluated in simulated navigation environments.*
+  <a href="https://arxiv.org/abs/2609.34276"><img src="https://img.shields.io/badge/arxiv-2609.34276-silver" alt="Paper"></a>
+  <a href="https://github.com/billzhao1030/NavHarness"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/billzhao1030/NavHarness"><img src="https://img.shields.io/github/stars/billzhao1030/NavHarness" alt="stars"></a>
 - MessyMem: Learning-from-Doing Memory for Mobile Manipulation
   <a href="https://arxiv.org/abs/2609.15976"><img src="https://img.shields.io/badge/arxiv-2609.15976-silver" alt="Paper"></a>
   <a href="https://messymem.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -160,6 +167,9 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents — *Evolves context management, persistent memory, and hierarchical skills through validated execution-driven system edits while keeping the foundation model frozen; includes physical robot evaluation.*
+  <a href="https://arxiv.org/abs/2609.32862"><img src="https://img.shields.io/badge/arxiv-2609.32862-silver" alt="Paper"></a>
+  <a href="https://jingsongliang.com/robofoundry/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - HarnessPAI: An Evolving Harness for Physical AI — Coding agents refine executable robot harnesses between rollouts using execution feedback, while keeping the underlying action backends frozen.
   <a href="https://arxiv.org/abs/2609.29166"><img src="https://img.shields.io/badge/arxiv-2609.29166-silver" alt="Paper"></a>
 
@@ -610,6 +620,11 @@ Jev+Robot
 
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
+- RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers — *Evaluates coding agents across interactive robot control, policy development, perception and estimation, and mechanical design under explicit resource budgets and independent artifact evaluation.*
+  <a href="https://arxiv.org/abs/2609.34210"><img src="https://img.shields.io/badge/arxiv-2609.34210-silver" alt="Paper"></a>
+  <a href="https://rle-bench.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/RLE-Bench/RLE-Bench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/RLE-Bench/RLE-Bench"><img src="https://img.shields.io/github/stars/RLE-Bench/RLE-Bench" alt="stars"></a>
 - EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics — *A simulation benchmark for coding agents and a pipeline that diversifies verified solutions into demonstrations for robot policy learning.*
   <a href="https://arxiv.org/abs/2609.27308"><img src="https://img.shields.io/badge/arxiv-2609.27308-silver" alt="Paper"></a>
   <a href="https://embodiedswe.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
