@@ -1,6 +1,4 @@
-- Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language — *CLUE; an LLM agent resolves ambiguous goals through map queries, inspection, navigation, and manipulation skills, with closed-loop evaluation on a physical Spot robot.*
-  <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arxiv-2609.30428-silver" alt="Paper"></a>
-  <a href="https://zacravichandran.github.io/CLUE/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a># Awesome-Robot-Use-Agent
+
 News: We add many jev+robot demos in [Infrastructure and Benchmarks](#infrastructure-and-benchmarks)! Please refer these.
 <p align="center">
   <img src="Assets/wordmark-dark.png" alt="Awesome Robot Use Agent" width="500">
