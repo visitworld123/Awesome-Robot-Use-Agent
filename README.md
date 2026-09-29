@@ -30,6 +30,10 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- Robot Manipulation with GPT-6-Astra: Body Knowledge, Experience Reuse, Emergent Skills, and Sim2Real Transfer — *Body descriptions and recorded experience support reusable control code and sim-to-real transfer; physical evaluation comprises 12 trials using operator-confirmed button contact.*
+  <a href="https://arxiv.org/abs/2609.31770"><img src="https://img.shields.io/badge/arxiv-2609.31770-silver" alt="Paper"></a>
+  <a href="https://github.com/hesd10/astra-robot-sim2real"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/hesd10/astra-robot-sim2real"><img src="https://img.shields.io/github/stars/hesd10/astra-robot-sim2real" alt="stars"></a>
 - **Know Your Body: A Harness for Direct and Self-Improving Robot Control with VLMs** — KnowBody; body-grounded robot control and iterative improvement through execution feedback, evaluated on a small real-robot task suite.
   <a href="https://arxiv.org/abs/2609.28530"><img src="https://img.shields.io/badge/arxiv-2609.28530-silver" alt="Paper"></a>
   <a href="https://loule0-0.github.io/KnowBody/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -165,6 +169,9 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence — *HexaAnything; executable world state and control workflows support tool-based robot execution, tool refinement, and trace-based model training; includes simulation and physical-robot studies.*
+  <a href="https://arxiv.org/abs/2609.35432"><img src="https://img.shields.io/badge/arxiv-2609.35432-silver" alt="Paper"></a>
+
 - RoboFoundry: System-as-Policy Evolution for Self-Learning Embodied Agents — *Evolves context management, persistent memory, and hierarchical skills through validated execution-driven system edits while keeping the foundation model frozen; includes physical robot evaluation.*
   <a href="https://arxiv.org/abs/2609.32862"><img src="https://img.shields.io/badge/arxiv-2609.32862-silver" alt="Paper"></a>
   <a href="https://jingsongliang.com/robofoundry/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
