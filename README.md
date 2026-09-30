@@ -30,6 +30,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation — *A frozen general-purpose VLM controls robot manipulation through mid-level actions, asynchronous monitoring, outcome verification, and background memory updates; evaluated in simulation and on an xArm6.*
+  <a href="https://arxiv.org/abs/2609.38078"><img src="https://img.shields.io/badge/arxiv-2609.38078-silver" alt="Paper"></a>
+  <a href="https://motor-mind.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Robot Manipulation with GPT-6-Astra: Body Knowledge, Experience Reuse, Emergent Skills, and Sim2Real Transfer — *Body descriptions and recorded experience support reusable control code and sim-to-real transfer; physical evaluation comprises 12 trials using operator-confirmed button contact.*
   <a href="https://arxiv.org/abs/2609.31770"><img src="https://img.shields.io/badge/arxiv-2609.31770-silver" alt="Paper"></a>
   <a href="https://github.com/hesd10/astra-robot-sim2real"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -149,6 +152,8 @@ Architectures that organize reasoning and robot execution through intermediate p
 Systems that turn experience into reusable knowledge, skill programs, improved policies, or validated capability upgrades. Includes human-guided methods and learned-policy precursors where noted.
 
 #### Memory and Knowledge Evolution
+- RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation — *A dual-loop manipulation harness evolves persistent task and action knowledge from physical feedback while keeping the base model fixed, supporting retrieval, correction, and reuse across episodes.*
+  <a href="https://arxiv.org/abs/2609.37583"><img src="https://img.shields.io/badge/arxiv-2609.37583-silver" alt="Paper"></a>
 - Recursive Harness Distillation across Agents for Robot Manipulation — *A strong agent distills and refines intervention experience into a reusable playbook for lighter agents operating frozen robot policies; evaluated in simulation and real-world manipulation.*
   <a href="https://arxiv.org/abs/2609.33378"><img src="https://img.shields.io/badge/arxiv-2609.33378-silver" alt="Paper"></a>
 
@@ -169,6 +174,10 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents — *RoboSkill; an exploration–execution–evolution loop accumulates reusable textual and executable skills from robot experience, with visual and tactile feedback and cross-agent skill reuse.*
+  <a href="https://arxiv.org/abs/2609.37810"><img src="https://img.shields.io/badge/arxiv-2609.37810-silver" alt="Paper"></a>
+  <a href="https://github.com/SII-dannyXSC/RoboSkill"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/SII-dannyXSC/RoboSkill"><img src="https://img.shields.io/github/stars/SII-dannyXSC/RoboSkill" alt="stars"></a>
 - Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence — *HexaAnything; executable world state and control workflows support tool-based robot execution, tool refinement, and trace-based model training; includes simulation and physical-robot studies.*
   <a href="https://arxiv.org/abs/2609.35432"><img src="https://img.shields.io/badge/arxiv-2609.35432-silver" alt="Paper"></a>
 
@@ -209,6 +218,8 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- SkillWeaver: Agentic Exploration over Neural Interaction Skills for Scalable Robot Data Generation — *A VLM agent composes reusable closed-loop neural interaction skills through verifier-guided exploration, reflection, and memory to generate simulated robot demonstrations for downstream policy learning.*
+  <a href="https://arxiv.org/abs/2609.36171"><img src="https://img.shields.io/badge/arxiv-2609.36171-silver" alt="Paper"></a>
 - KnowDemo: Knowledge-Guided Robot Demonstration Generation from Human Videos — *VLM-based task-knowledge extraction for generating diverse, validated robot demonstrations.*
   <a href="https://arxiv.org/abs/2609.21229"><img src="https://img.shields.io/badge/arxiv-2609.21229-silver" alt="Paper"></a>
   <a href="https://zhiyuan-gao.github.io/knowdemo/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -326,7 +337,14 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/SgtVincent/EMOS"><img src="https://img.shields.io/github/stars/SgtVincent/EMOS" alt="stars"></a>
 
 ### Programming and Spatial Action Interfaces
+- KPI: A Promptable Kernel for Physical Interaction on Humanoids — *A vision-language agent specifies reference trajectories and interaction contracts for a contact-control kernel above an unchanged whole-body tracker; demonstrated on instruction-driven humanoid interaction tasks.*
+  <a href="https://arxiv.org/abs/2609.36151"><img src="https://img.shields.io/badge/arxiv-2609.36151-silver" alt="Paper"></a>
+  <a href="https://kpi-robot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 
+- Encore: Few-Shot Agentic Discovery of Manipulation Strategies — *A coding agent reads structured demonstration evidence, develops policy programs through a fixed perception-and-action API, and freezes them for held-out evaluation; includes two bimanual real-robot tasks.*
+  <a href="https://arxiv.org/abs/2609.37359"><img src="https://img.shields.io/badge/arxiv-2609.37359-silver" alt="Paper"></a>
+  <a href="https://github.com/YIFANK/encore"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/YIFANK/encore"><img src="https://img.shields.io/github/stars/YIFANK/encore" alt="stars"></a>
 - CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation — *An LLM routes language and spatial references to typed tools and robot missions over a shared semantic map, with operator confirmation and physical quadruped evaluation.*
   <a href="https://arxiv.org/abs/2609.31418"><img src="https://img.shields.io/badge/arxiv-2609.31418-silver" alt="Paper"></a>
 
@@ -424,6 +442,12 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- Simple Agentic Memory for Generalist Robot Policies — *SimpleARM; a training-free external memory layer maintains task-relevant typed state, retrieves history-dependent information, and re-grounds recalled entities for frozen robot policies; evaluated on RoboMME.*
+  <a href="https://arxiv.org/abs/2609.36595"><img src="https://img.shields.io/badge/arxiv-2609.36595-silver" alt="Paper"></a>
+  <a href="https://simplearm.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- NavJev: Efficient Vision-Language Navigation via Action-Centric Visual Compression and Discriminative Action-Semantic Memory — *Action-centric visual compression and discriminative action-semantic memory support typed Jev decisions for vision-language navigation, evaluated in R2R-CE and two real indoor environments.*
+  <a href="https://arxiv.org/abs/2609.34969"><img src="https://img.shields.io/badge/arxiv-2609.34969-silver" alt="Paper"></a>
+  <a href="https://kai-sheng-caesar.github.io/NavJev/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed under [Reasoning-Acting and Dual-System Architectures](#reasoning-acting-and-dual-system-architectures).
 - Actively Resolving Contextual Uncertainty for Underspecified Tasks in Natural Language — *CLUE; an LLM agent resolves ambiguous goals through map queries, inspection, navigation, and manipulation skills, with closed-loop evaluation on a physical Spot robot.*
   <a href="https://arxiv.org/abs/2609.30428"><img src="https://img.shields.io/badge/arxiv-2609.30428-silver" alt="Paper"></a>
@@ -542,6 +566,9 @@ Methods that assess risks, verify execution, and trigger corrective planning or 
 #### Multi-Robot Coordination
 
 Task allocation, communication, and organizational structures for teams of robots or embodied agents. ORCH is evaluated in simulation; system-level runtimes are listed under [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes).
+- Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method — *MAVLN and TRISS; constrained multi-agent navigation with an LLM subtask scheduler, shared topological memory, and conflict-aware execution, evaluated in simulated scenes.*
+  <a href="https://arxiv.org/abs/2609.35965"><img src="https://img.shields.io/badge/arxiv-2609.35965-silver" alt="Paper"></a>
+  <a href="https://xyz9911.github.io/mavln/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution — *Simulation.*
   <a href="https://arxiv.org/abs/2609.18520"><img src="https://img.shields.io/badge/arxiv-2609.18520-silver" alt="Paper"></a>
   <a href="https://github.com/Admire-ljb/AeroWeaver"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -622,7 +649,9 @@ Jev+Robot
 - Jev Robot Control — *Reproducible xArm7 MuJoCo comparison of Jev, GPT-6 Astra, and GPT-4.1 mini with archived trajectories, offline verification, and replay.*
   <a href="https://github.com/openroboto-ai/jev-robot-control"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/openroboto-ai/jev-robot-control"><img src="https://img.shields.io/github/stars/openroboto-ai/jev-robot-control" alt="stars"></a>
-
+- robojev: Natural-Language Control of a WidowX AI Arm with Jev Typed Judgments — *A real-hardware prototype using typed Jev decisions to sequence reusable manipulation primitives; reported demonstrations are heavily fitted to one paper cup and one table.*
+  <a href="https://github.com/alee792/robojev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/alee792/robojev"><img src="https://img.shields.io/github/stars/alee792/robojev" alt="stars"></a>
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
 - RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers — *Evaluates coding agents across interactive robot control, policy development, perception and estimation, and mechanical design under explicit resource budgets and independent artifact evaluation.*
@@ -703,7 +732,8 @@ Robot integration, deployment, latency, runtime reliability, and evaluation of m
 ### Perspectives and Reports
 
 These are essays, research blogs, and evaluations; they are listed separately from papers.
-
+- What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery — *Technical report; a simulation case study of agent-driven skill discovery, exposing perception, evaluation, and memory bottlenecks despite 123 improvement rounds without success on the primary target task.*
+  <a href="https://arxiv.org/abs/2609.31760"><img src="https://img.shields.io/badge/arxiv-2609.31760-silver" alt="Paper"></a>
 - Robot-Use Agents — Phillip Isola, 2026. *Perspective.*
   <a href="https://web.mit.edu/phillipi/www/writing/robot-use-agents.html"><img src="https://img.shields.io/badge/-article-blue" alt="Article"></a>
 - Claude plays robotics — Anthropic, 2026. *Research report.*
