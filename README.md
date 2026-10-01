@@ -30,6 +30,9 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- ASENA: Self-evolving Agents for Embodied Navigation — *A general-purpose coding agent navigates through sensor and execution tools while accumulating persistent notes and programs; evaluates repeated-task improvement in simulation and supervised humanoid demonstrations.*
+  <a href="https://arxiv.org/abs/2609.39207"><img src="https://img.shields.io/badge/arxiv-2609.39207-silver" alt="Paper"></a>
+  <a href="https://asena-bot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation — *A frozen general-purpose VLM controls robot manipulation through mid-level actions, asynchronous monitoring, outcome verification, and background memory updates; evaluated in simulation and on an xArm6.*
   <a href="https://arxiv.org/abs/2609.38078"><img src="https://img.shields.io/badge/arxiv-2609.38078-silver" alt="Paper"></a>
   <a href="https://motor-mind.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -174,6 +177,9 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- SimEX: Simulation-Integrated Robotics AutoResearch — *A coding agent develops reusable robot toolboxes in simulation and uses limited real-world trials to repair both tools and simulators; demonstrated on three bimanual task families.*
+  <a href="https://arxiv.org/abs/2609.38982"><img src="https://img.shields.io/badge/arxiv-2609.38982-silver" alt="Paper"></a>
+  <a href="https://robo-simex.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents — *RoboSkill; an exploration–execution–evolution loop accumulates reusable textual and executable skills from robot experience, with visual and tactile feedback and cross-agent skill reuse.*
   <a href="https://arxiv.org/abs/2609.37810"><img src="https://img.shields.io/badge/arxiv-2609.37810-silver" alt="Paper"></a>
   <a href="https://github.com/SII-dannyXSC/RoboSkill"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -268,7 +274,11 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://bagh2178.github.io/AllDayNav/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 
 #### Capability Upgrades and Regression Control
-
+- Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents — *Studies rollout scale and matched champion–challenger selection for agent-driven evolution of visual robot harnesses, measuring generalization to held-out simulated tasks.*
+  <a href="https://arxiv.org/abs/2609.39304"><img src="https://img.shields.io/badge/arxiv-2609.39304-silver" alt="Paper"></a>
+- DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents — *A semantic planner and deterministic execution governor share contracts for refusal, substitution, and recovery, with evidence-based failure attribution and regression-gated capability updates around a frozen policy.*
+  <a href="https://arxiv.org/abs/2609.40306"><img src="https://img.shields.io/badge/arxiv-2609.40306-silver" alt="Paper"></a>
+  <a href="https://denghaoyuan123.github.io/Dynaharness_page/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Learning Without Losing Identity: Capability Evolution for Embodied Agents
   <a href="https://arxiv.org/abs/2604.07799"><img src="https://img.shields.io/badge/arxiv-2604.07799-silver" alt="Paper"></a>
   <a href="https://s20sc.github.io/aeros-project/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -337,6 +347,8 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/SgtVincent/EMOS"><img src="https://img.shields.io/github/stars/SgtVincent/EMOS" alt="stars"></a>
 
 ### Programming and Spatial Action Interfaces
+- Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools — *URAI; programming agents develop reusable robot tools with execution feedback and human guidance, while execution agents call validated tools for simulated and real bimanual tasks.*
+  <a href="https://arxiv.org/abs/2609.39018"><img src="https://img.shields.io/badge/arxiv-2609.39018-silver" alt="Paper"></a>
 - KPI: A Promptable Kernel for Physical Interaction on Humanoids — *A vision-language agent specifies reference trajectories and interaction contracts for a contact-control kernel above an unchanged whole-body tracker; demonstrated on instruction-driven humanoid interaction tasks.*
   <a href="https://arxiv.org/abs/2609.36151"><img src="https://img.shields.io/badge/arxiv-2609.36151-silver" alt="Paper"></a>
   <a href="https://kpi-robot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -654,6 +666,13 @@ Jev+Robot
   <a href="https://github.com/alee792/robojev"><img src="https://img.shields.io/github/stars/alee792/robojev" alt="stars"></a>
 
 Robot integration, deployment, latency, runtime reliability, and evaluation of model-plus-interface systems. Includes benchmarks for memory, safety, and recovery, as well as surveys of robot policy verification.
+- DrivingBench: Can Vision-Language Models Drive a Toyota Corolla? — *A physical-vehicle benchmark exposing three MCP tools to vision-language models, evaluated at parking-lot speeds with a supervising safety driver and bounded retry attempts.*
+  <a href="https://arxiv.org/abs/2609.38948"><img src="https://img.shields.io/badge/arxiv-2609.38948-silver" alt="Paper"></a>
+  <a href="https://drivingbench.com"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/aditya-ramabadran/drivingbench_harness_v1"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/aditya-ramabadran/drivingbench_harness_v1"><img src="https://img.shields.io/github/stars/aditya-ramabadran/drivingbench_harness_v1" alt="stars"></a>
+- LIBERO-Agent: Evaluating General-Purpose Agents for Direct Embodied Manipulation — *A simulation benchmark for general-purpose agents that choose observations, process them with tools, and issue native manipulation actions; the primary evaluation uses 30 tasks from a 200-task integration.*
+  <a href="https://arxiv.org/abs/2609.39507"><img src="https://img.shields.io/badge/arxiv-2609.39507-silver" alt="Paper"></a>
 - RLE-Bench: A Qualifying Exam for Coding Agents as Robot Learning Engineers — *Evaluates coding agents across interactive robot control, policy development, perception and estimation, and mechanical design under explicit resource budgets and independent artifact evaluation.*
   <a href="https://arxiv.org/abs/2609.34210"><img src="https://img.shields.io/badge/arxiv-2609.34210-silver" alt="Paper"></a>
   <a href="https://rle-bench.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
