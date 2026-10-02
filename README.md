@@ -30,6 +30,10 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- RoboICL: Embodied In-Context Learning with GPT-6 Astra — *A frozen general-purpose VLM issues Cartesian action chunks through a validated robot interface, using demonstrations, execution receipts, and observation history for closed-loop correction; simulation and real-robot evaluation.*
+  <a href="https://arxiv.org/abs/2609.34261"><img src="https://img.shields.io/badge/arxiv-2609.34261-silver" alt="Paper"></a>
+  <a href="https://github.com/Mosi-AI/RoboICL"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Mosi-AI/RoboICL"><img src="https://img.shields.io/github/stars/Mosi-AI/RoboICL" alt="stars"></a>
 - ASENA: Self-evolving Agents for Embodied Navigation — *A general-purpose coding agent navigates through sensor and execution tools while accumulating persistent notes and programs; evaluates repeated-task improvement in simulation and supervised humanoid demonstrations.*
   <a href="https://arxiv.org/abs/2609.39207"><img src="https://img.shields.io/badge/arxiv-2609.39207-silver" alt="Paper"></a>
   <a href="https://asena-bot.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -177,6 +181,10 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments — *Research blog and open-source harness; multiple agents refine a task–skill tree from execution feedback, consolidate workflows into code, and gate skill changes with regression checks.*
+  <a href="https://lab.noematrix.ai/blog/2-roborsi-research-preview/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/nssmd/RoboRSI"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/nssmd/RoboRSI"><img src="https://img.shields.io/github/stars/nssmd/RoboRSI" alt="stars"></a>
 - SimEX: Simulation-Integrated Robotics AutoResearch — *A coding agent develops reusable robot toolboxes in simulation and uses limited real-world trials to repair both tools and simulators; demonstrated on three bimanual task families.*
   <a href="https://arxiv.org/abs/2609.38982"><img src="https://img.shields.io/badge/arxiv-2609.38982-silver" alt="Paper"></a>
   <a href="https://robo-simex.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -347,6 +355,8 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/SgtVincent/EMOS"><img src="https://img.shields.io/github/stars/SgtVincent/EMOS" alt="stars"></a>
 
 ### Programming and Spatial Action Interfaces
+- InCoRo: In-Context Learning for Robotics Control with Feedback Loops — *An off-the-shelf LLM updates robot commands from scene-state feedback and in-context examples; demonstrated on physical SCARA and DELTA robots in static and dynamic environments.*
+  <a href="https://arxiv.org/abs/2402.05188"><img src="https://img.shields.io/badge/arxiv-2402.05188-silver" alt="Paper"></a>
 - Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools — *URAI; programming agents develop reusable robot tools with execution feedback and human guidance, while execution agents call validated tools for simulated and real bimanual tasks.*
   <a href="https://arxiv.org/abs/2609.39018"><img src="https://img.shields.io/badge/arxiv-2609.39018-silver" alt="Paper"></a>
 - KPI: A Promptable Kernel for Physical Interaction on Humanoids — *A vision-language agent specifies reference trajectories and interaction contracts for a contact-control kernel above an unchanged whole-body tracker; demonstrated on instruction-driven humanoid interaction tasks.*
@@ -454,6 +464,9 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning — *An agentic orchestration layer exposes heterogeneous robot policies as reusable skills, using execution evidence and memory to route tasks and bridge policy handoffs without joint retraining; simulation and real-robot evaluation.*
+  <a href="https://arxiv.org/abs/2607.18060"><img src="https://img.shields.io/badge/arxiv-2607.18060-silver" alt="Paper"></a>
+  <a href="https://www.robo-harness.com/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Simple Agentic Memory for Generalist Robot Policies — *SimpleARM; a training-free external memory layer maintains task-relevant typed state, retrieves history-dependent information, and re-grounds recalled entities for frozen robot policies; evaluated on RoboMME.*
   <a href="https://arxiv.org/abs/2609.36595"><img src="https://img.shields.io/badge/arxiv-2609.36595-silver" alt="Paper"></a>
   <a href="https://simplearm.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
