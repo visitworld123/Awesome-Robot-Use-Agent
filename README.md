@@ -30,6 +30,10 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies — *Off-the-shelf coding agents write perception and control programs through native ROS 2 terminal interfaces, with no task-specific policy training; evaluated in simulation with time paused during agent deliberation.*
+  <a href="https://arxiv.org/abs/2610.02459"><img src="https://img.shields.io/badge/arxiv-2610.02459-silver" alt="Paper"></a>
+  <a href="https://github.com/terminalworld/OpenRUA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/terminalworld/OpenRUA"><img src="https://img.shields.io/github/stars/terminalworld/OpenRUA" alt="stars"></a>
 - RoboICL: Embodied In-Context Learning with GPT-6 Astra — *A frozen general-purpose VLM issues Cartesian action chunks through a validated robot interface, using demonstrations, execution receipts, and observation history for closed-loop correction; simulation and real-robot evaluation.*
   <a href="https://arxiv.org/abs/2609.34261"><img src="https://img.shields.io/badge/arxiv-2609.34261-silver" alt="Paper"></a>
   <a href="https://github.com/Mosi-AI/RoboICL"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -101,7 +105,7 @@ General-purpose models operating robots through reusable harnesses, tools, and v
   <a href="https://capgym.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
   <a href="https://github.com/capgym/cap-x"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/capgym/cap-x"><img src="https://img.shields.io/github/stars/capgym/cap-x" alt="stars"></a>
-- Guava: Distilling Frontier VLM Agents into a Compact Model with a Manipulation Harness
+- Guava: Distilling Frontier VLMs into a Compact Agent through a Robotic Manipulation Harness
   <a href="https://arxiv.org/abs/2606.18363"><img src="https://img.shields.io/badge/arxiv-2606.18363-silver" alt="Paper"></a>
   <a href="https://guava-harness.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - ETA: A New Agentic Paradigm for Embodied Tasks
@@ -116,7 +120,8 @@ General-purpose models operating robots through reusable harnesses, tools, and v
 ### Reasoning-Acting and Dual-System Architectures
 
 Architectures that organize reasoning and robot execution through intermediate plans, coupled reasoning and action modules, or adaptive think/act scheduling. Includes learned-policy building blocks and agent-level systems. For author-described System 1 (e.g., Jev-like system) /System 2 models (VLM-like models), fixed-rate and asynchronous coupling are distinguished from adaptive reasoning. Related task-time memory and recovery methods remain under [Planning, Skill Orchestration and Memory](#planning-skill-orchestration-and-memory).
-
+- Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision — *Connects frontier-model guidance to a trained local policy through autonomous demonstration collection, corrective examples, and dense language supervision; evaluated in simulation and on physical manipulation tasks.*
+  <a href="https://arxiv.org/abs/2610.03615"><img src="https://img.shields.io/badge/arxiv-2610.03615-silver" alt="Paper"></a>
 - Code Owns the Simulation, Jev Owns the Evaluation — *Studies Jev as an evaluator of outcomes supplied by code, combining lookahead and executable skills; includes simulated Stacker control and instruction variants, with action-abstraction differences limiting causal attribution.*
   <a href="https://arxiv.org/abs/2610.01834"><img src="https://img.shields.io/badge/arxiv-2610.01834-silver" alt="Paper"></a>
 - DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation — *System 1 WAM execution with an optional System 2 subtask planner; video co-training without future-video generation at inference.*
@@ -183,6 +188,10 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- RoboBridge: A Self-Evolving Embodied Agent Framework for Sim-to-Real Transfer — *Transfers revisable procedural skills from simulation to physical tasks and validates further skill updates from execution feedback, exposing a frozen VLA as a tool with optional inference-time guidance.*
+  <a href="https://arxiv.org/abs/2610.02717"><img src="https://img.shields.io/badge/arxiv-2610.02717-silver" alt="Paper"></a>
+- Skill2Real: Agentic Skill Learning for Zero-Shot Sim-to-Real Robot Manipulation — *Learns hierarchical executable skills through a shared robot API using simulation diagnosis and validation gates, then transfers frozen skill memories to a physical UR5e without target-task policy fine-tuning.*
+  <a href="https://arxiv.org/abs/2610.02788"><img src="https://img.shields.io/badge/arxiv-2610.02788-silver" alt="Paper"></a>
 - InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation — *An LLM evolves staged reward programs using simulation feedback and a verified skill library, while numerical search tunes constants for a fixed pretrained humanoid controller; includes physical G1 deployment.*
   <a href="https://arxiv.org/abs/2610.02196"><img src="https://img.shields.io/badge/arxiv-2610.02196-silver" alt="Paper"></a>
   <a href="https://sirui-xu.github.io/InterEvolve"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -240,6 +249,10 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- Find Something You Can't Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models — *A vision-language agent selects feasible practice tasks and evaluates outcomes in a persistent workspace, driving residual reinforcement learning over a frozen VLA with reduced manual resets.*
+  <a href="https://arxiv.org/abs/2609.32069"><img src="https://img.shields.io/badge/arxiv-2609.32069-silver" alt="Paper"></a>
+- MobiAgent: Dual-Loop Recursive Policy Self-Improvement for Long-Horizon Mobile Manipulation — *A VLM planner and visual critic compose reusable skill policies, while an offline outer loop segments, verifies, and recycles deployment trajectories to fine-tune the skill library.*
+  <a href="https://arxiv.org/abs/2610.03476"><img src="https://img.shields.io/badge/arxiv-2610.03476-silver" alt="Paper"></a>
 - SkillWeaver: Agentic Exploration over Neural Interaction Skills for Scalable Robot Data Generation — *A VLM agent composes reusable closed-loop neural interaction skills through verifier-guided exploration, reflection, and memory to generate simulated robot demonstrations for downstream policy learning.*
   <a href="https://arxiv.org/abs/2609.36171"><img src="https://img.shields.io/badge/arxiv-2609.36171-silver" alt="Paper"></a>
 - KnowDemo: Knowledge-Guided Robot Demonstration Generation from Human Videos — *VLM-based task-knowledge extraction for generating diverse, validated robot demonstrations.*
@@ -476,6 +489,8 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- AgenticNav: Zero-Shot Vision-and-Language Navigation as a Tool-Calling Harness — *Exposes pixel-target actions, on-demand depth queries, and selective visual memory recall as tools for a VLM navigation agent; evaluated in VLN-CE and on two physical robot platforms.*
+  <a href="https://arxiv.org/abs/2606.10577"><img src="https://img.shields.io/badge/arxiv-2606.10577-silver" alt="Paper"></a>
 - NavHarness: Adaptive Goals for Agentic Vision-Language Navigation — *Four agents coordinate goal generation, verification, memory, and visuomotor execution, compressing navigation history at verified goal boundaries; evaluated on 24 real-robot route trials.*
   <a href="https://arxiv.org/abs/2609.39915"><img src="https://img.shields.io/badge/arxiv-2609.39915-silver" alt="Paper"></a>
   <a href="https://Navharness.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -683,9 +698,10 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
 ### Infrastructure and Benchmarks
 Jev+Robot
 
-- robo-jev: A 10 Hz Typed-Decision Layer for Physical Robots — *A System-One-style decision layer that scores typed robot actions, stop conditions, gripper states, paths, speed, and force for a deterministic executor.*
+- robo-jev: A 10 Hz Typed-Decision Layer for Physical Robots — *A typed decision layer for a deterministic robot executor; its R11 fresh-holdout simulation audit did not meet the registered success and safety acceptance criteria.*
   <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
   <a href="https://github.com/STEERIX-home/robo-jev"><img src="https://img.shields.io/github/stars/STEERIX-home/robo-jev" alt="stars"></a>
+
 
 - EmbodiedJev: MuJoCo Robot Decision Workbench — *Browser-based MuJoCo and Franka Panda workbench supporting Jev, Claude, OpenAI-compatible APIs, and local MiniCPM models with visible observe–decide–execute–feedback loops.*
   <a href="https://github.com/FBddcz/embodied-jev"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
