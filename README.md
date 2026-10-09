@@ -1,5 +1,5 @@
 
-News: We release a benchmark to evaluate the ability of MLLM on the robot use [RobotWorld](https://robotworldai.github.io/)
+News: We release a benchmark to evaluate the ability of MLLM on the robot use, please see: [RobotWorld](https://robotworldai.github.io/)😙
 <p align="center">
   <img src="Assets/wordmark-dark.png" alt="Awesome Robot Use Agent" width="500">
 </p>
