@@ -30,6 +30,20 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation? — *A frozen frontier VLM controls memory-dependent manipulation through TCP waypoints and gripper commands while retaining visual history; evaluated in simulation with disclosed adaptive development on the test split.*
+  <a href="https://arxiv.org/abs/2610.17350"><img src="https://img.shields.io/badge/arxiv-2610.17350-silver" alt="Paper"></a>
+  <a href="https://embodied-astra.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/jackbjed/embodied-astra-robomme"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/jackbjed/embodied-astra-robomme"><img src="https://img.shields.io/github/stars/jackbjed/embodied-astra-robomme" alt="stars"></a>
+- JoyInside-VLM-Agent: Product-Conditioned Multimodal Policy Learning for Embodied Agents — *Post-trains a multimodal ReAct agent to select tools under product-specific robot capabilities and constraints; evaluates tool decisions and includes selected physical quadruped interaction traces rather than broad robot success-rate testing.*
+  <a href="https://arxiv.org/abs/2610.12957"><img src="https://img.shields.io/badge/arxiv-2610.12957-silver" alt="Paper"></a>
+- TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback — *A pretrained general-purpose VLM interprets visual and tactile feedback to issue end-effector targets for physical peg insertion without additional task training; evaluated after scripted grasp preparation with human-judged outcomes.*
+  <a href="https://arxiv.org/abs/2610.07621"><img src="https://img.shields.io/badge/arxiv-2610.07621-silver" alt="Paper"></a>
+- RobotUse: Allocating Computation, Context, and Decisions — *Allocates task intent to a main agent, visual target and pose decisions to subagents, and geometry and control to a robot backend; a persistent playbook supports adaptation from execution experience, with simulation and physical-robot evaluation.*
+  <a href="https://arxiv.org/abs/2610.04929"><img src="https://img.shields.io/badge/arxiv-2610.04929-silver" alt="Paper"></a>
+  <a href="https://robotuse-team.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/robotuse-team/RobotUse"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/robotuse-team/RobotUse"><img src="https://img.shields.io/github/stars/robotuse-team/RobotUse" alt="stars"></a>
 - SuperNav: An Agentic Navigation System for Any Task in Any Scene — *A pretrained multimodal agent uses navigation skills, tools, progress tracking, and a visual-point interface to delegate motion to geometric or learned executors; includes simulated evaluations and quadruped deployment.*
   <a href="https://arxiv.org/abs/2610.12126"><img src="https://img.shields.io/badge/arxiv-2610.12126-silver" alt="Paper"></a>
   <a href="https://zju3dv.github.io/SuperNav/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -127,6 +141,9 @@ General-purpose models operating robots through reusable harnesses, tools, and v
 ### Reasoning-Acting and Dual-System Architectures
 
 Architectures that organize reasoning and robot execution through intermediate plans, coupled reasoning and action modules, or adaptive think/act scheduling. Includes learned-policy building blocks and agent-level systems. For author-described System 1 (e.g., Jev-like system) /System 2 models (VLM-like models), fixed-rate and asynchronous coupling are distinguished from adaptive reasoning. Related task-time memory and recovery methods remain under [Planning, Skill Orchestration and Memory](#planning-skill-orchestration-and-memory).
+- Make π0.5 Learn to Call Astra for Reliable Robot Manipulation — *Learns a CALL head on frozen policy features to request a general-purpose model for closed-loop recovery and then hand control back to the robot policy; evaluated on LIBERO with additional consultation cost.*
+  <a href="https://arxiv.org/abs/2610.14117"><img src="https://img.shields.io/badge/arxiv-2610.14117-silver" alt="Paper"></a>
+  <a href="https://kykgeek.github.io/Pi05_CALL_Astra/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision — *Connects frontier-model guidance to a trained local policy through autonomous demonstration collection, corrective examples, and dense language supervision; evaluated in simulation and on physical manipulation tasks.*
   <a href="https://arxiv.org/abs/2610.03615"><img src="https://img.shields.io/badge/arxiv-2610.03615-silver" alt="Paper"></a>
 - Code Owns the Simulation, Jev Owns the Evaluation — *Studies Jev as an evaluator of outcomes supplied by code, combining lookahead and executable skills; includes simulated Stacker control and instruction variants, with action-abstraction differences limiting causal attribution.*
@@ -173,6 +190,11 @@ Architectures that organize reasoning and robot execution through intermediate p
 Systems that turn experience into reusable knowledge, skill programs, improved policies, or validated capability upgrades. Includes human-guided methods and learned-policy precursors where noted.
 
 #### Memory and Knowledge Evolution
+- An Agentic Framework for Proactive Robots with Procedural Assistance Memory — *Maintains a finite-state procedural assistance memory that a VLM revises between days to personalize when and how a robot helps, while a separately trained VLA executes the selected tasks.*
+  <a href="https://arxiv.org/abs/2610.21211"><img src="https://img.shields.io/badge/arxiv-2610.21211-silver" alt="Paper"></a>
+  <a href="https://davian-robotics.github.io/PAM/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration — *Uses a reasoning agent and frozen VLA to explore self-proposed goals, verify interactions, and consolidate reusable environment knowledge before evaluation; studies adaptation in simulated manipulation tasks.*
+  <a href="https://arxiv.org/abs/2610.06999"><img src="https://img.shields.io/badge/arxiv-2610.06999-silver" alt="Paper"></a>
 - RoboHarn-Evo: Evolving Hierarchical Physical Knowledge for Self-Improving Robotic Manipulation — *A dual-loop manipulation harness evolves persistent task and action knowledge from physical feedback while keeping the base model fixed, supporting retrieval, correction, and reuse across episodes.*
   <a href="https://arxiv.org/abs/2609.37583"><img src="https://img.shields.io/badge/arxiv-2609.37583-silver" alt="Paper"></a>
 - Recursive Harness Distillation across Agents for Robot Manipulation — *A strong agent distills and refines intervention experience into a reusable playbook for lighter agents operating frozen robot policies; evaluated in simulation and real-world manipulation.*
@@ -195,6 +217,18 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence — *Distills a coding agent’s robot experience into reusable executable skills and diagnostic lessons, acquired on one playground scene per task and frozen for agents acting in new scenes; evaluated on RoboDojo-Sim.*
+  <a href="https://arxiv.org/abs/2610.18867"><img src="https://img.shields.io/badge/arxiv-2610.18867-silver" alt="Paper"></a>
+  <a href="https://github.com/RoboProbe/RoboProbe"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/RoboProbe/RoboProbe"><img src="https://img.shields.io/github/stars/RoboProbe/RoboProbe" alt="stars"></a>
+- EnactOpt: Diagnosis-Guided Harness Evolution for Embodied Agents — *Uses execution diagnoses to jointly revise textual skills and executable context-management logic around frozen models; independently evolved harnesses are evaluated on embodied and text-based task benchmarks.*
+  <a href="https://arxiv.org/abs/2610.14977"><img src="https://img.shields.io/badge/arxiv-2610.14977-silver" alt="Paper"></a>
+- Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback — *A coding agent refines aerial-manipulation programs using separate diagnostic programs that gather active visual and physical evidence in simulation; shared APIs support subsequent physical execution.*
+  <a href="https://arxiv.org/abs/2610.12549"><img src="https://img.shields.io/badge/arxiv-2610.12549-silver" alt="Paper"></a>
+  <a href="https://fly-by-code.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- EMHO: EMbodied Agent Harness Optimization via Experience Traces — *Revises planning, context construction, visual tool use, and recovery logic from execution traces while keeping the embodied model frozen; evaluates harness evolution on simulated EmbodiedBench tasks and reports held-out overfitting in later iterations.*
+  <a href="https://arxiv.org/abs/2610.08432"><img src="https://img.shields.io/badge/arxiv-2610.08432-silver" alt="Paper"></a>
+  <a href="https://hyunjung00.github.io/emho/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - RoboRSI: Stable, Efficient, and Reusable Robot Self-Evolution in Complex Real-World Environments — *Human-guided skill-tree refinement attributes failures, revises scoped capabilities, and validates reusable skills; includes 104 evolving real-robot development rounds and simulation benchmarks.*
   <a href="https://arxiv.org/abs/2610.12424"><img src="https://img.shields.io/badge/arxiv-2610.12424-silver" alt="Paper"></a>
   <a href="https://lab.noematrix.ai/blog/2-roborsi-research-preview/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -263,6 +297,14 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents — *A coding agent first revises its robot harness, then diagnoses persistent failures through saved-state retries and selectively fine-tunes missing executor skills using self-collected demonstrations; simulation evaluation.*
+  <a href="https://arxiv.org/abs/2610.20474"><img src="https://img.shields.io/badge/arxiv-2610.20474-silver" alt="Paper"></a>
+- EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies — *Uses a coding-agent research loop to revise endoscopic robot policies from physical experiments, failure evidence, and new supervision; evaluation includes benchtop and ex vivo studies under human-authorized execution.*
+  <a href="https://arxiv.org/abs/2610.13376"><img src="https://img.shields.io/badge/arxiv-2610.13376-silver" alt="Paper"></a>
+- EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel in Simulation — *Uses agents to compose skill graphs and iteratively refine simulated scenes, placements, and execution plans for robot data generation, then trains downstream policies on accepted trajectories; improvements are task-dependent.*
+  <a href="https://arxiv.org/abs/2610.07969"><img src="https://img.shields.io/badge/arxiv-2610.07969-silver" alt="Paper"></a>
+- EmbodiRSI: Recursive Self-Improvement for Data-Efficient Robot Adaptation — *Coordinates agent-assisted correction and adaptive data collection in task-specific simulations to improve robot policies, followed by limited human-in-the-loop physical refinement and policy-only deployment.*
+  <a href="https://arxiv.org/abs/2609.38905"><img src="https://img.shields.io/badge/arxiv-2609.38905-silver" alt="Paper"></a>
 - Co-Evolving Robot Orchestrators and Policies through Deployment — *Co-evolves a VLM orchestrator and robot policy using curated deployment experience, skill-level candidate verification, and rollback; evaluates frozen policy and memory on held-out simulated and physical tasks.*
   <a href="https://arxiv.org/abs/2610.09228"><img src="https://img.shields.io/badge/arxiv-2610.09228-silver" alt="Paper"></a>
 - Find Something You Can't Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models — *A vision-language agent selects feasible practice tasks and evaluates outcomes in a persistent workspace, driving residual reinforcement learning over a frozen VLA with reduced manual resets.*
@@ -340,6 +382,11 @@ Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
+- BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation — *Deploys an onboard language-model agent that selects predefined behavior-tree skills with structured execution feedback and local interruption checks; evaluated through text, simulation, and supervised physical-robot trials.*
+  <a href="https://arxiv.org/abs/2610.13862"><img src="https://img.shields.io/badge/arxiv-2610.13862-silver" alt="Paper"></a>
+- From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots — *Connects multimodal social reasoning and long-term memory to Sophia’s native gestures, speech, and facial actuators through streaming orchestration; evaluated with participant ratings and latency measurements.*
+  <a href="https://arxiv.org/abs/2610.05964"><img src="https://img.shields.io/badge/arxiv-2610.05964-silver" alt="Paper"></a>
+  <a href="https://robosocial.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - NavGPT-3: Harnessing Context in a Hierarchical Navigation Runtime — *Connects language-model planning, a trained navigation VLA, and monitoring through a hierarchical runtime with separate contexts and motion permissions; evaluated in navigation benchmarks and physical interruption studies.*
   <a href="https://arxiv.org/abs/2610.10787"><img src="https://img.shields.io/badge/arxiv-2610.10787-silver" alt="Paper"></a>
   <a href="https://metacognitionai.github.io/NavGPT3/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -398,6 +445,18 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/SgtVincent/EMOS"><img src="https://img.shields.io/github/stars/SgtVincent/EMOS" alt="stars"></a>
 
 ### Programming and Spatial Action Interfaces
+- MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos — *Extracts spatial memory and approach priors from passive human video, then uses a code-as-policy agent and robot-specific navigation and manipulation tools for closed-loop mobile manipulation on physical hardware.*
+  <a href="https://arxiv.org/abs/2610.20998"><img src="https://img.shields.io/badge/arxiv-2610.20998-silver" alt="Paper"></a>
+  <a href="https://mocap-7.github.io/MoCAP-page/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/MoCAP-7/MoCAP"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/MoCAP-7/MoCAP"><img src="https://img.shields.io/github/stars/MoCAP-7/MoCAP" alt="stars"></a>
+- VLMs are Native Action Models: Unleashing the Manipulation Capabilities of VLMs with Explicit Action-Space Grounding — *Grounds VLM-generated textual pose actions with an explicit tool-center-point frame and visual action-space cues, studying both zero-shot control and task-specific post-training in simulated and physical manipulation.*
+  <a href="https://arxiv.org/abs/2610.12832"><img src="https://img.shields.io/badge/arxiv-2610.12832-silver" alt="Paper"></a>
+- PhysCaP: Grounding Code-as-Policy Agent with Physics-Informed Exploration — *Augments code-as-policy agents with proprioception-based mass and stiffness measurement tools, using a Planner and Prioritizer to acquire task-relevant physical evidence; evaluated on physical tabletop tasks and in simulation.*
+  <a href="https://arxiv.org/abs/2608.21031"><img src="https://img.shields.io/badge/arxiv-2608.21031-silver" alt="Paper"></a>
+  <a href="https://physcap.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Robotic Long-Horizon Manipulation with Progressive In-Context Code Generation and Episodic Feedback — *Generates executable robot plans from progressively organized in-context examples and uses episodic visual feedback for replanning; evaluated in simulation with four physical tabletop demonstrations.*
+  <a href="https://arxiv.org/abs/2503.21969"><img src="https://img.shields.io/badge/arxiv-2503.21969-silver" alt="Paper"></a>
 - Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success Rate but 65% Fewer Tokens — *An interactive Python interface composes robot primitives and VLA policies with conditional checks, local retries, and selective feedback; evaluated against tool calling on 700 paired simulated task instances.*
   <a href="https://arxiv.org/abs/2610.01939"><img src="https://img.shields.io/badge/arxiv-2610.01939-silver" alt="Paper"></a>
   <a href="https://github.com/DAGroup-PKU/PyRUA-Lean"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -511,6 +570,38 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
 #### Task Planning, Skill Orchestration and Memory
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory — *Uses a human-seeded topological map and editable task memory to guide local navigation, verify semantic arrivals, and update physical-state records from robot evidence; evaluated on a quadruped in one office.*
+  <a href="https://arxiv.org/abs/2610.21586"><img src="https://img.shields.io/badge/arxiv-2610.21586-silver" alt="Paper"></a>
+- ChunkAct: Action Chunking for Agentic Robotics — *Compiles task knowledge into executable action chunks with typed failure exits, reducing planner calls while retaining feedback-driven replanning; evaluated on simulated manipulation benchmarks.*
+  <a href="https://arxiv.org/abs/2610.18874"><img src="https://img.shields.io/badge/arxiv-2610.18874-silver" alt="Paper"></a>
+- Gamma: Grounded Multi-Agent Memory with Mechanical Audit for Memory-Intensive Manipulation — *Combines grounded text memory, separate writer and reasoner agents, and mechanical verification of memory claims to guide a fixed subgoal-conditioned manipulation policy; evaluated in simulation.*
+  <a href="https://arxiv.org/abs/2610.12793"><img src="https://img.shields.io/badge/arxiv-2610.12793-silver" alt="Paper"></a>
+  <a href="https://github.com/1999Lyd/GAMMA"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/1999Lyd/GAMMA"><img src="https://img.shields.io/github/stars/1999Lyd/GAMMA" alt="stars"></a>
+- REMM: Revisable Embodied Memory for Manipulation — *Maintains revisable task state backed by an append-only evidence log, withdraws dependent conclusions, and schedules verified recovery skills around a frozen robot policy; physical trials include operator assistance.*
+  <a href="https://arxiv.org/abs/2610.12710"><img src="https://img.shields.io/badge/arxiv-2610.12710-silver" alt="Paper"></a>
+  <a href="https://revanthsenthil.github.io/remm/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- RoboAware: Learning to Coordinate Embodied Skills from Counterfactual Outcomes — *Learns a state-conditioned coordinator from matched counterfactual simulator branches to route between modular skills and frozen end-to-end policies while a frozen coding agent generates local executable programs.*
+  <a href="https://arxiv.org/abs/2610.11480"><img src="https://img.shields.io/badge/arxiv-2610.11480-silver" alt="Paper"></a>
+- Proactive Robot Assistance via Event-Driven Reasoning over State Changes — *Triggers VLM reasoning from stable before-and-after scene states to infer assistance needs and select indexed robot primitives; physical tabletop evaluation counts clarification as an appropriate response alongside autonomous assistance.*
+  <a href="https://arxiv.org/abs/2610.08344"><img src="https://img.shields.io/badge/arxiv-2610.08344-silver" alt="Paper"></a>
+- OntoPlan: An Ontology-Grounded Scene Representation and Agentic Framework for Scalable Robot Task Planning — *Connects ontology-grounded scene retrieval and goal formalization to a symbolic planner through an agentic workflow; evaluates symbolic task planning in fully specified worlds rather than perception-to-action robot execution.*
+  <a href="https://arxiv.org/abs/2610.07649"><img src="https://img.shields.io/badge/arxiv-2610.07649-silver" alt="Paper"></a>
+  <a href="https://github.com/namhyeongwoo/OntoPlan"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/namhyeongwoo/OntoPlan"><img src="https://img.shields.io/github/stars/namhyeongwoo/OntoPlan" alt="stars"></a>
+- Recursive Video In-Context Learning for Agentic Robot — *Exposes a demonstration as a hierarchy of keyframes, phases, moments, and clips that an agent retrieves through read-only tools while orchestrating a frozen VLA; evaluated on LIBERO in simulation.*
+  <a href="https://arxiv.org/abs/2610.06843"><img src="https://img.shields.io/badge/arxiv-2610.06843-silver" alt="Paper"></a>
+  <a href="https://bwr-hhh.github.io/rvicl/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/BWR-hhh/rvicl"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/BWR-hhh/rvicl"><img src="https://img.shields.io/github/stars/BWR-hhh/rvicl" alt="stars"></a>
+- MarvisNav: Making Memory Visible on Route Choices for Zero-Shot Object Navigation — *Projects topological exploration states onto egocentric route choices for VLM-based object navigation, coupling visible memory with sparse high-level decisions; includes simulation evaluation and Go2 deployment demonstrations.*
+  <a href="https://arxiv.org/abs/2610.06510"><img src="https://img.shields.io/badge/arxiv-2610.06510-silver" alt="Paper"></a>
+  <a href="https://wangjincheng1998.github.io/MarvisNav/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Beyond the Remembered World: Predictive 4D Belief for Persistent Navigation in Evolving Worlds — *A frozen VLM invokes temporal-memory, prediction, inspection, and navigation tools to search for targets whose locations change; evaluated in simulation and matched physical-robot trials, with gains strongest under learnable routines.*
+  <a href="https://arxiv.org/abs/2609.39166"><img src="https://img.shields.io/badge/arxiv-2609.39166-silver" alt="Paper"></a>
+  <a href="https://zju4embodiedai.github.io/EvolvingNav/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/ZJU4EmbodiedAI/EvolvingNav"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/ZJU4EmbodiedAI/EvolvingNav"><img src="https://img.shields.io/github/stars/ZJU4EmbodiedAI/EvolvingNav" alt="stars"></a>
 - AgenticNav: Zero-Shot Vision-and-Language Navigation as a Tool-Calling Harness — *Exposes pixel-target actions, on-demand depth queries, and selective visual memory recall as tools for a VLM navigation agent; evaluated in VLN-CE and on two physical robot platforms.*
   <a href="https://arxiv.org/abs/2606.10577"><img src="https://img.shields.io/badge/arxiv-2606.10577-silver" alt="Paper"></a>
 - NavHarness: Adaptive Goals for Agentic Vision-Language Navigation — *Four agents coordinate goal generation, verification, memory, and visuomotor execution, compressing navigation history at verified goal boundaries; evaluated on 24 real-robot route trials.*
@@ -597,6 +688,20 @@ Cross-cutting reasoning/action coupling and System 1/System 2 designs are listed
 #### Safe Planning, Verification and Failure Recovery
 
 Methods that assess risks, verify execution, and trigger corrective planning or recovery. Failure-recovery benchmarks are listed under [Infrastructure and Benchmarks](#infrastructure-and-benchmarks).
+- CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance — *Augments a frozen VLA with revisable user and scene memory, geometric action shielding, and reusable recovery skills refined through reflection; evaluated in simulation and targeted physical-robot studies.*
+  <a href="https://arxiv.org/abs/2610.21453"><img src="https://img.shields.io/badge/arxiv-2610.21453-silver" alt="Paper"></a>
+  <a href="https://vincent2311.github.io/Projects/CarryOn/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/JIA-Lab-research/CarryOn" title="Repository available; code release pending"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/JIA-Lab-research/CarryOn"><img src="https://img.shields.io/github/stars/JIA-Lab-research/CarryOn" alt="stars"></a>
+- Cracking Mobile Manipulation: From Failure Diagnosis to Agentic Robot System — *Diagnoses long-horizon mobile-manipulation failures and adds demonstration-based skills, adaptive visual memory, base positioning, and end-effector corrections around a fixed subtask VLA; simulation and physical evaluation.*
+  <a href="https://arxiv.org/abs/2610.19600"><img src="https://img.shields.io/badge/arxiv-2610.19600-silver" alt="Paper"></a>
+  <a href="https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation" title="Repository available; code release pending"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation"><img src="https://img.shields.io/github/stars/PKU-VaLuE-Lab/Cracking-Mobile-Manipulation" alt="stars"></a>
+- ParallelWorld: Test-Time Scaling for Agentic Embodied Reasoning — *Uses verifier-guided search over imagined outcomes of executable primitives, then executes one action and replans; evaluated on embodied understanding and simulated manipulation, with additional test-time computation.*
+  <a href="https://arxiv.org/abs/2608.22971"><img src="https://img.shields.io/badge/arxiv-2608.22971-silver" alt="Paper"></a>
+  <a href="https://agenticei.github.io/ParallelWorld-page/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/AgenticEI/ParallelWorld"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/AgenticEI/ParallelWorld"><img src="https://img.shields.io/github/stars/AgenticEI/ParallelWorld" alt="stars"></a>
 - Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation — *An agent develops recovery programs in a digital twin and monitors, restores, verifies, and resumes robot tasks; real-world experience and human demonstrations improve separate task and recovery policies.*
   <a href="https://arxiv.org/abs/2610.01178"><img src="https://img.shields.io/badge/arxiv-2610.01178-silver" alt="Paper"></a>
   <a href="https://www.liuisabella.com/Recova"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -646,6 +751,10 @@ Methods that assess risks, verify execution, and trigger corrective planning or 
 #### Multi-Robot Coordination
 
 Task allocation, communication, and organizational structures for teams of robots or embodied agents. ORCH is evaluated in simulation; system-level runtimes are listed under [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes).
+- Persistent LLM Orchestration of Heterogeneous Robot Teams via Partial Delegation to Multi-Agent Protocols — *Maintains a compact semantic world state and delegates routine coordination to multi-agent protocols while selectively re-engaging an LLM for changing rescue tasks; evaluated in abstract heterogeneous-team simulations.*
+  <a href="https://arxiv.org/abs/2610.15224"><img src="https://img.shields.io/badge/arxiv-2610.15224-silver" alt="Paper"></a>
+- Verifier-Mediated Multi-LLM Coordination for Multi-Robot Path Planning — *Coordinates robot-specific language-model plans through geometric conflict checks and structured replanning feedback; studied in CARLA scenarios with a physical quadrotor demonstration.*
+  <a href="https://arxiv.org/abs/2610.12761"><img src="https://img.shields.io/badge/arxiv-2610.12761-silver" alt="Paper"></a>
 - Managing Context and Communication in Distributed Agentic UAV Swarms — *Combines local language-model agents, structured note memory, and deterministic interest-aware gossip for distributed UAV coordination; evaluated with ten UAVs in simulated search and rescue.*
   <a href="https://arxiv.org/abs/2610.01569"><img src="https://img.shields.io/badge/arxiv-2610.01569-silver" alt="Paper"></a>
 - DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication — *Distributed VLM orchestrators exchange semantic messages and guide fine-tuned VLA controllers through language, evaluated on two-agent RoboPoly and RoboTwin manipulation tasks in simulation.*
@@ -718,6 +827,41 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
   <a href="https://arxiv.org/abs/2606.26025"><img src="https://img.shields.io/badge/arxiv-2606.26025-silver" alt="Paper"></a>
 
 ### Infrastructure and Benchmarks
+- System1-Arena: Which Decisions Can Be Left to System 1? — *Evaluates typed-decision models including Jev on static questions and mixed-domain closed loops, with simulated robotics interfaces and a latency-aware protocol; separates local decision accuracy from end-to-end success.*
+  <a href="https://arxiv.org/abs/2610.21244"><img src="https://img.shields.io/badge/arxiv-2610.21244-silver" alt="Paper"></a>
+  <a href="https://tianyucodings.github.io/S1-Arena"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/TianyuCodings/S1-Arena"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/TianyuCodings/S1-Arena"><img src="https://img.shields.io/github/stars/TianyuCodings/S1-Arena" alt="stars"></a>
+- SEAR: Self-Evolving Agentic Robotics — *A framework and benchmark for code-as-policy, live agent control, and agent-driven policy research, with controls for interaction budgets, repeated attempts, and reusable experience across simulated and physical tasks.*
+  <a href="https://arxiv.org/abs/2610.18792"><img src="https://img.shields.io/badge/arxiv-2610.18792-silver" alt="Paper"></a>
+  <a href="https://sear.bot/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/Self-Evolving-Agentic-Robotics/SEAR" title="Repository available; code release pending"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Self-Evolving-Agentic-Robotics/SEAR"><img src="https://img.shields.io/github/stars/Self-Evolving-Agentic-Robotics/SEAR" alt="stars"></a>
+- Towards a Systematic Study of Embodied System 2 over Full Task Execution Cycles — *Studies embodied System 2 across full task cycles using evidence memory, progress verification, and dynamic agendas, with simulation and offline next-action evaluation on recorded robot demonstrations.*
+  <a href="https://arxiv.org/abs/2610.17657"><img src="https://img.shields.io/badge/arxiv-2610.17657-silver" alt="Paper"></a>
+  <a href="https://vfishc.github.io/scoper/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- Embodied Skill Bench: Benchmarking How Well Agents with Embodied Skills Perform on Physical Tasks — *Benchmarks reusable embodied skills and adaptive delegation in simulated manipulation, including a separate Jev waypoint skill that exposes a success–latency trade-off when paired with a frontier VLM.*
+  <a href="https://arxiv.org/abs/2610.16238"><img src="https://img.shields.io/badge/arxiv-2610.16238-silver" alt="Paper"></a>
+  <a href="https://github.com/HanZhi306/EmbodiedSkill-Bench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/HanZhi306/EmbodiedSkill-Bench"><img src="https://img.shields.io/github/stars/HanZhi306/EmbodiedSkill-Bench" alt="stars"></a>
+- MAGMA-Bench: Evaluating Long-Horizon Embodied Agents under Dynamic Tasks and Execution Failures — *Benchmarks long-horizon skill-calling agents under changing goals, asynchronous multi-robot execution, and controlled failures using structured task-level simulation; abstracts away raw perception and low-level motor control.*
+  <a href="https://arxiv.org/abs/2610.13534"><img src="https://img.shields.io/badge/arxiv-2610.13534-silver" alt="Paper"></a>
+  <a href="https://magma-rob.github.io/magma-bench"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/MAGMA-rob/magma-bench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/MAGMA-rob/magma-bench"><img src="https://img.shields.io/github/stars/MAGMA-rob/magma-bench" alt="stars"></a>
+- RESCUE: Is This Alarm Worth Acting On? Counterfactual Evaluation of VLA Runtime Monitors — *Evaluates robot runtime alarms by restoring simulator and policy state and comparing counterfactual interventions, measuring whether acting on an alarm improves outcomes rather than detection accuracy alone.*
+  <a href="https://arxiv.org/abs/2610.13516"><img src="https://img.shields.io/badge/arxiv-2610.13516-silver" alt="Paper"></a>
+- EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents — *Evaluates whether coding-agent harnesses transfer interaction histories or distilled skill summaries from basic to composed tasks on offline embodied state-transition graphs; does not evaluate live physical control or continual weight updates.*
+  <a href="https://arxiv.org/abs/2610.13021"><img src="https://img.shields.io/badge/arxiv-2610.13021-silver" alt="Paper"></a>
+  <a href="https://pku-value-lab.github.io/EmbodiedCLBench-homepage/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench"><img src="https://img.shields.io/github/stars/PKU-VaLuE-Lab/EmbodiedCLBench" alt="stars"></a>
+- What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents — *Benchmarks memory representations and their inference costs for embodied agents using fixed observation histories followed by memory-dependent requests; includes limited physical delivery demonstrations.*
+  <a href="https://arxiv.org/abs/2610.12561"><img src="https://img.shields.io/badge/arxiv-2610.12561-silver" alt="Paper"></a>
+- BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation — *Benchmarks learned policies and cold-start coding-agent programs on simulated G1 household manipulation under a shared whole-body controller, with 20 tasks and native VR demonstrations; the principal comparison covers nine tasks.*
+  <a href="https://arxiv.org/abs/2610.07594"><img src="https://img.shields.io/badge/arxiv-2610.07594-silver" alt="Paper"></a>
+- SharedKV-BT: Node-Local Typed Decisions for Behavior-Tree Agents — *Combines node-local typed candidate scoring with behavior-tree stage gating and external postcondition checks; studies simulated robot manipulation and navigation alongside fixed computer-use tasks, without physical-robot validation.*
+  <a href="https://arxiv.org/abs/2610.07327"><img src="https://img.shields.io/badge/arxiv-2610.07327-silver" alt="Paper"></a>
 - RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments — *Benchmarks multimodal agents through robot interfaces across 84 simulated tasks and diverse embodiments, with explicit interaction budgets and executable success checks; reports outcomes and execution-trace limitations.*
   <a href="https://arxiv.org/abs/2610.10409"><img src="https://img.shields.io/badge/arxiv-2610.10409-silver" alt="Paper"></a>
 
@@ -840,6 +984,18 @@ Robot integration, deployment, latency, runtime reliability, and evaluation of m
 ### Perspectives and Reports
 
 These are essays, research blogs, and evaluations; they are listed separately from papers.
+- Towards Agentic Robots: Model, Data, Environment, and Harness — *A survey organizing agentic robotics across model, data, environment, and harness functions, covering how agents develop robot capabilities and orchestrate their use.*
+  <a href="https://arxiv.org/abs/2610.20442"><img src="https://img.shields.io/badge/arxiv-2610.20442-silver" alt="Paper"></a>
+  <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots"><img src="https://img.shields.io/github/stars/chonghanqin/Awesome-Agentic-Robots" alt="stars"></a>
+- Who Improves the Robot? Toward Physical Recursive Self-Improvement — *A survey and perspective distinguishing improvements to robot capabilities from improvements to the improvement process itself, with an emphasis on agent harnesses, verification, and evidence for physical recursive self-improvement.*
+  <a href="https://arxiv.org/abs/2610.18842"><img src="https://img.shields.io/badge/arxiv-2610.18842-silver" alt="Paper"></a>
+  <a href="https://github.com/SAIL-Research-Lab/Physical-RSI"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/SAIL-Research-Lab/Physical-RSI"><img src="https://img.shields.io/github/stars/SAIL-Research-Lab/Physical-RSI" alt="stars"></a>
+- When Faster Decisions Do Not Make Better Agents: An Empirical Study of Jev in Agent Workflows — *An empirical study of Jev-based action selection in text-only ALFWorld and AndroidWorld, separating cheaper decisions from task success, recovery, and cost per successful outcome; no physical-robot experiments.*
+  <a href="https://arxiv.org/abs/2610.13092"><img src="https://img.shields.io/badge/arxiv-2610.13092-silver" alt="Paper"></a>
+- Silicon Language: A Robot-Native Knowledge Exchange Framework for Heterogeneous Robots — *Proposes robot-native knowledge packets for cross-embodiment exchange, with an operator-assisted laboratory proof of concept; autonomous fleet exchange and general skill transfer remain unvalidated.*
+  <a href="https://arxiv.org/abs/2610.07650"><img src="https://img.shields.io/badge/arxiv-2610.07650-silver" alt="Paper"></a>
 - What Stops Recursive Self-Improvement in Robotics? Lessons from 123 Rounds of Agentic Skill Discovery — *Technical report; a simulation case study of agent-driven skill discovery, exposing perception, evaluation, and memory bottlenecks despite 123 improvement rounds without success on the primary target task.*
   <a href="https://arxiv.org/abs/2609.31760"><img src="https://img.shields.io/badge/arxiv-2609.31760-silver" alt="Paper"></a>
 - Robot-Use Agents — Phillip Isola, 2026. *Perspective.*
