@@ -30,6 +30,12 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
 ### General-Purpose Robot-Use Agents
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents — *A coding agent controls a dual-arm robot through a thin CLI, inspects failures, and writes reusable perception tools; tested on all 42 RoboDojo tasks (39.7% success), with tight insertion still difficult.*
+  <a href="https://arxiv.org/abs/2610.23479"><img src="https://img.shields.io/badge/arxiv-2610.23479-silver" alt="Paper"></a>
+  <a href="https://github.com/HexaFuture/HexaShell"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/HexaFuture/HexaShell"><img src="https://img.shields.io/github/stars/HexaFuture/HexaShell" alt="stars"></a>
+- RoboHarness: A Simple Harness Outperforms VLA and World Action Models — *Gives a coding agent a visual-geometric control panel for invoking embodied tasks; v2 reports BEHAVIOR Challenge results and says implementation is open source, but the arXiv record does not link the repository.*
+  <a href="https://arxiv.org/abs/2610.14018"><img src="https://img.shields.io/badge/arxiv-2610.14018-silver" alt="Paper"></a>
 - Can a Frontier VLM Serve as a Robot Policy for Memory-Dependent Manipulation? — *A frozen frontier VLM controls memory-dependent manipulation through TCP waypoints and gripper commands while retaining visual history; evaluated in simulation with disclosed adaptive development on the test split.*
   <a href="https://arxiv.org/abs/2610.17350"><img src="https://img.shields.io/badge/arxiv-2610.17350-silver" alt="Paper"></a>
   <a href="https://embodied-astra.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -217,6 +223,11 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/Stanford-ILIAD/droc"><img src="https://img.shields.io/github/stars/Stanford-ILIAD/droc" alt="stars"></a>
 
 #### Skill and Program Evolution
+- Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies — *A coding agent develops executable manipulation policies through progressively less privileged simulation, then carries the task interface and accumulated experience onto the real robot; the arXiv v2 appeared during this window, while code is still described as forthcoming.*
+  <a href="https://arxiv.org/abs/2610.10479"><img src="https://img.shields.io/badge/arxiv-2610.10479-silver" alt="Paper"></a>
+- Agentic Robot Creation through Generation, Verification, and Revision — *Roboforge turns task specifications into executable policies and revises motions or rewards from rollout feedback; includes a fabricated agent-generated robot with physical deployment.*
+  <a href="https://arxiv.org/abs/2610.17881"><img src="https://img.shields.io/badge/arxiv-2610.17881-silver" alt="Paper"></a>
+  <a href="https://roboforge-project.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence — *Distills a coding agent’s robot experience into reusable executable skills and diagnostic lessons, acquired on one playground scene per task and frozen for agents acting in new scenes; evaluated on RoboDojo-Sim.*
   <a href="https://arxiv.org/abs/2610.18867"><img src="https://img.shields.io/badge/arxiv-2610.18867-silver" alt="Paper"></a>
   <a href="https://github.com/RoboProbe/RoboProbe"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
@@ -297,6 +308,15 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://github.com/eureka-research/DrEureka"><img src="https://img.shields.io/github/stars/eureka-research/DrEureka" alt="stars"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy — *Introduces PhysRSI-eval across 18 manipulation tasks and analyzes first-attempt performance, efficiency, success, budget, and improvement from failure; workspace interventions suggest persistent interaction history and reusable experience can support later and cross-task gains.*
+  <a href="https://arxiv.org/abs/2610.26848"><img src="https://img.shields.io/badge/arxiv-2610.26848-silver" alt="Paper"></a>
+- Scaling Online Exploration for Robot Agents — *RAX uses a frozen general-purpose coding agent to learn from online robot exploration and compile verified skills into executable programs; reports multi-embodiment simulation and physical-robot tasks, with an open harness and skill library.*
+  <a href="https://arxiv.org/abs/2610.22496"><img src="https://img.shields.io/badge/arxiv-2610.22496-silver" alt="Paper"></a>
+  <a href="https://robot-agent-exploration.com/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/robot-agent-exploration/rax"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/robot-agent-exploration/rax"><img src="https://img.shields.io/github/stars/robot-agent-exploration/rax" alt="stars"></a>
+- D-World: An Explicit World-Language-Action Model with Recursive Self-Improvement under Dual Control — *Separate perception and planning agents write and revise an executable digital twin from measured robot feedback; dual-arm towel and toaster tasks illustrate local, measurement-checked revisions while the LLM remains frozen.*
+  <a href="https://arxiv.org/abs/2610.17114"><img src="https://img.shields.io/badge/arxiv-2610.17114-silver" alt="Paper"></a>
 - AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents — *A coding agent first revises its robot harness, then diagnoses persistent failures through saved-state retries and selectively fine-tunes missing executor skills using self-collected demonstrations; simulation evaluation.*
   <a href="https://arxiv.org/abs/2610.20474"><img src="https://img.shields.io/badge/arxiv-2610.20474-silver" alt="Paper"></a>
 - EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies — *Uses a coding-agent research loop to revise endoscopic robot policies from physical experiments, failure evidence, and new supervision; evaluation includes benchtop and ex vivo studies under human-authorized execution.*
@@ -382,6 +402,8 @@ Related system-level memory and learning mechanisms: [PhyAgentOS, ABot-Claw, and
 ### Embodied Agent Operating Systems and Runtimes
 
 Persistent embodied-agent systems that organize robot capabilities, state, resources, execution checks, and feedback across tasks or robots.
+- InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration — *Organizes collaboration as behavior trees with capability assignment, dependency and handoff checks; retains feedback-driven program revisions and shared spatiotemporal memory, evaluated on 20 real-world multi-robot tasks.*
+  <a href="https://arxiv.org/abs/2610.23098"><img src="https://img.shields.io/badge/arxiv-2610.23098-silver" alt="Paper"></a>
 - BT-Agent: Deploying Onboard Robot Agents with Behavior Trees and Multi-Fidelity Evaluation — *Deploys an onboard language-model agent that selects predefined behavior-tree skills with structured execution feedback and local interruption checks; evaluated through text, simulation, and supervised physical-robot trials.*
   <a href="https://arxiv.org/abs/2610.13862"><img src="https://img.shields.io/badge/arxiv-2610.13862-silver" alt="Paper"></a>
 - From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots — *Connects multimodal social reasoning and long-term memory to Sophia’s native gestures, speech, and facial actuators through streaming orchestration; evaluated with participant ratings and latency measurements.*
@@ -749,6 +771,8 @@ Methods that assess risks, verify execution, and trigger corrective planning or 
   <a href="https://github.com/google-research/google-research/tree/master/language_model_uncertainty"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
 
 #### Multi-Robot Coordination
+- CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots — *Evolves executable coordination code over fixed motor skills using physical verification and retained experience; reports 8 completed tasks across 15 base runs with two simulated Unitree G1 robots, while contact stability remains limited.*
+  <a href="https://arxiv.org/abs/2610.23288"><img src="https://img.shields.io/badge/arxiv-2610.23288-silver" alt="Paper"></a>
 
 Task allocation, communication, and organizational structures for teams of robots or embodied agents. ORCH is evaluated in simulation; system-level runtimes are listed under [Embodied Agent Operating Systems and Runtimes](#embodied-agent-operating-systems-and-runtimes).
 - Persistent LLM Orchestration of Heterogeneous Robot Teams via Partial Delegation to Multi-Agent Protocols — *Maintains a compact semantic world state and delegates routine coordination to multi-agent protocols while selectively re-engaging an LLM for changing rescue tasks; evaluated in abstract heterogeneous-team simulations.*
@@ -827,6 +851,10 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
   <a href="https://arxiv.org/abs/2606.26025"><img src="https://img.shields.io/badge/arxiv-2606.26025-silver" alt="Paper"></a>
 
 ### Infrastructure and Benchmarks
+- HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation — *A cross-embodiment manipulation benchmark that includes prompted GPT-6 with move_eef tool control as a zero-shot baseline (5.2% Core-50 and 1.9% Transfer-16 over 660 trials); most of the paper studies trained policies, and qualitative robot rollouts do not establish broad real-world generalization.*
+  <a href="https://arxiv.org/abs/2610.26765"><img src="https://img.shields.io/badge/arxiv-2610.26765-silver" alt="Paper"></a>
+- RoboBugBench: Benchmarking Automated Repair of Real Robot Software Under an Audited Behavioral Oracle — *Tests coding agents on 33 execution-validated ROS 2 defects; simulation behavior rather than unit tests grades repairs, and the authors identify important false-acceptance limits in the shipped oracle.*
+  <a href="https://arxiv.org/abs/2610.16369"><img src="https://img.shields.io/badge/arxiv-2610.16369-silver" alt="Paper"></a>
 - System1-Arena: Which Decisions Can Be Left to System 1? — *Evaluates typed-decision models including Jev on static questions and mixed-domain closed loops, with simulated robotics interfaces and a latency-aware protocol; separates local decision accuracy from end-to-end success.*
   <a href="https://arxiv.org/abs/2610.21244"><img src="https://img.shields.io/badge/arxiv-2610.21244-silver" alt="Paper"></a>
   <a href="https://tianyucodings.github.io/S1-Arena"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -864,6 +892,9 @@ Related learned-policy methods that preserve language interfaces or reduce adapt
   <a href="https://arxiv.org/abs/2610.07327"><img src="https://img.shields.io/badge/arxiv-2610.07327-silver" alt="Paper"></a>
 - RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments — *Benchmarks multimodal agents through robot interfaces across 84 simulated tasks and diverse embodiments, with explicit interaction budgets and executable success checks; reports outcomes and execution-trace limitations.*
   <a href="https://arxiv.org/abs/2610.10409"><img src="https://img.shields.io/badge/arxiv-2610.10409-silver" alt="Paper"></a>
+  <a href="https://robotworldai.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/robotworldai/robotworld"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/robotworldai/robotworld"><img src="https://img.shields.io/github/stars/robotworldai/robotworld" alt="stars"></a>
 
 Jev+Robot
 
