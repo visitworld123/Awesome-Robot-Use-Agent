@@ -176,6 +176,11 @@ Architectures that organize reasoning and robot execution through intermediate p
   <a href="https://arxiv.org/abs/2610.03615"><img src="https://img.shields.io/badge/arxiv-2610.03615-silver" alt="Paper"></a>
 - Code Owns the Simulation, Jev Owns the Evaluation — *Studies Jev as an evaluator of outcomes supplied by code, combining lookahead and executable skills; includes simulated Stacker control and instruction variants, with action-abstraction differences limiting causal attribution.*
   <a href="https://arxiv.org/abs/2610.01834"><img src="https://img.shields.io/badge/arxiv-2610.01834-silver" alt="Paper"></a>
+- Spotter: Let the Embodied Model Lead, and the VLM Reflect for It — *A frozen VLA keeps executing while a local VLM screener checks each action chunk asynchronously with bounded lag; a general-purpose model is called only on confirmed errors to repair them with motion primitives, verify the fix, and hand control back; evaluated on RoboCasa, RoboTwin 2.0, and a real Franka arm.*
+  <a href="https://arxiv.org/abs/2609.36808"><img src="https://img.shields.io/badge/arxiv-2609.36808-silver" alt="Paper"></a>
+  <a href="https://zqc3117.github.io/Spotter/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/zqc3117/Spotter"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/zqc3117/Spotter"><img src="https://img.shields.io/github/stars/zqc3117/Spotter" alt="stars"></a>
 - DSWAM: A Dual-System World Action Foundation Model for Fine-Grained Robot Manipulation — *System 1 WAM execution with an optional System 2 subtask planner; video co-training without future-video generation at inference.*
   <a href="https://arxiv.org/abs/2607.04927"><img src="https://img.shields.io/badge/arxiv-2607.04927-silver" alt="Paper"></a>
   <a href="https://ds-wam.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
