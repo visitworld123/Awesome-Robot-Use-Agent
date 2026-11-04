@@ -12,6 +12,10 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
   <img src="Assets/architecture.png" alt="High-level architecture of Robot Use Agents: generalist agents, robot interfaces, the physical world, and self-evolution." width="1100">
 </p>
 
+## Recent GitHub Pages project roundup
+
+[Ten recent agentic robotics projects with official GitHub Pages sites](RECENT_GITHUB_IO_PROJECTS.md), verified on November 4, 2026, with project/code/paper links, short descriptions, and explicit date sources.
+
 ## Contents
 
 - [General-Purpose Robot-Use Agents](#general-purpose-robot-use-agents)
