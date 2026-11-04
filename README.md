@@ -32,6 +32,18 @@ Inspired by Phillip Isola's [Robot-Use Agents](https://web.mit.edu/phillipi/www/
   <a href="https://arxiv.org/abs/2610.39446"><img src="https://img.shields.io/badge/arxiv-2610.39446-silver" alt="Paper"></a>
 
 General-purpose models operating robots through reusable harnesses, tools, and visual interfaces.
+- Democratizing Robot-Use Agents: A Unified Harness with Open Models — *Introduces uni-robot-agent, a shared harness for open-weight models and robot tools, with a pathway for further training; reports a RoboDojo score of 31.39 for Qwen3.8-Flash-Next and evaluation across 19 real-world tasks. The public code currently documents simulator integrations; physical-robot workflows are marked as coming soon.*
+  <a href="https://arxiv.org/abs/2611.01560"><img src="https://img.shields.io/badge/arxiv-2611.01560-silver" alt="Paper"></a>
+  <a href="https://openrua.ai/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/Open-RUA/uni-robot-agent"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Open-RUA/uni-robot-agent"><img src="https://img.shields.io/github/stars/Open-RUA/uni-robot-agent" alt="stars"></a>
+- Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation — *Keeps the model in charge of task decisions through tools or synthesized Python programs, while a robot gateway previews trajectories, checks execution tolerances, and returns measured errors for recovery; reports 57.7% success on RoboDojo and 73.2% on RoboCasa365.*
+  <a href="https://arxiv.org/abs/2611.01112"><img src="https://img.shields.io/badge/arxiv-2611.01112-silver" alt="Paper"></a>
+  <a href="https://auriga.stelledge.com/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/lose4578/Auriga"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/lose4578/Auriga"><img src="https://img.shields.io/github/stars/lose4578/Auriga" alt="stars"></a>
+- WorldSketch: Sketching World Models for Zero-Shot Mobile Manipulation — *A VLM agent queries perception tools to construct and validate a task-specific kinematic world model, then uses a geometric planner; execution feedback updates uncertain hypotheses. Reports zero-shot results on RoboCasa, LIBERO-PRO, and R2R-CE, rather than direct VLM action generation.*
+  <a href="https://arxiv.org/abs/2611.00513"><img src="https://img.shields.io/badge/arxiv-2611.00513-silver" alt="Paper"></a>
 - CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents — *Post-trains a small open VLM with SFT and multi-turn RL to write code against low-level robot APIs and use execution feedback; reports simulation benchmarks and real-robot use after simulation-only adaptation, so this is a trained CaP agent rather than zero-shot frontier-model control.*
   <a href="https://arxiv.org/abs/2610.40799"><img src="https://img.shields.io/badge/arxiv-2610.40799-silver" alt="Paper"></a>
 - SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion — *A VLM agent uses geometric tools to build and revise reusable mating sketches, then hands execution to a standard planner and compliant controller; reports 88% strict-pose success over 69 simulated insertions and faster reuse across eight tasks.*
@@ -166,7 +178,7 @@ General-purpose models operating robots through reusable harnesses, tools, and v
 
 - ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation — *Interleaves reasoning and action while composing perception, navigation, manipulation, and locomotion tools for long-horizon legged tasks.*
   <a href="https://arxiv.org/abs/2610.34370"><img src="https://img.shields.io/badge/arxiv-2610.34370-silver" alt="Paper"></a>
-- Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent — *ZAP adapts a pretrained 27B VLM to robot tool use through simulation SFT and GRPO; reports real-world transfer without real-robot training data.*
+- Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics — *ZAP teaches a small open VLM motion skills entirely in simulation from its own successes, without frontier-model distillation or real-robot data; reports 96.7% success on its real-world tasks, matching GPT-6 Astra in the authors’ harness, and 74.0% on a bimanual RoboLab-120 adaptation.*
   <a href="https://arxiv.org/abs/2610.35817"><img src="https://img.shields.io/badge/arxiv-2610.35817-silver" alt="Paper"></a>
 - Agentic World Action Models — *AW-0 couples code-based reusable skill programs with future-video and action prediction, joining agentic planning and physical dynamics in one model.*
   <a href="https://arxiv.org/abs/2610.30136"><img src="https://img.shields.io/badge/arxiv-2610.30136-silver" alt="Paper"></a>
@@ -275,6 +287,8 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://arxiv.org/abs/2610.33487"><img src="https://img.shields.io/badge/arxiv-2610.33487-silver" alt="Paper"></a>
 
 #### Skill and Program Evolution
+- Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse — *LLM coding agents run six autonomous research campaigns to specialize a lifelong task-assignment and multi-agent path-finding planner; report 22–60% simulated throughput gains on a warehouse modeled after a real site, with reviewed patch chains. This is planner-code evolution in a modeled environment, not a validated physical-warehouse deployment.*
+  <a href="https://arxiv.org/abs/2611.02391"><img src="https://img.shields.io/badge/arxiv-2611.02391-silver" alt="Paper"></a>
 - RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory — *A coding model iteratively revises the harness around a frozen robot policy from rollout failures, including control routines and persistent experience; reports held-out simulation gains on unseen scenes and tasks without weight updates.*
   <a href="https://arxiv.org/abs/2610.42141"><img src="https://img.shields.io/badge/arxiv-2610.42141-silver" alt="Paper"></a>
   <a href="https://roboarchitect-ai.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -378,6 +392,11 @@ Systems that turn experience into reusable knowledge, skill programs, improved p
   <a href="https://iiiiqiiii.github.io/motio/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 
 #### Autonomous Data Collection and Policy Improvement
+- PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data — *A coding agent rebuilds a requested task in simulation from one calibrated robot episode, writes the scene, expert controller and success judge, then uses certified rollouts to produce synchronized, policy-training data. Across five real-robot tasks, policies trained on farm data achieved 93 successes in 100 trials versus 84 for teleoperation-trained policies; the synthetic-data pipeline, rather than agent-operated real-time control, is the contribution.*
+  <a href="https://arxiv.org/abs/2611.05320"><img src="https://img.shields.io/badge/arxiv-2611.05320-silver" alt="Paper"></a>
+  <a href="https://dagroup-pku.github.io/PyRUA-Lean/DataFarm/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+  <a href="https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm"><img src="https://img.shields.io/github/stars/DAGroup-PKU/PyRUA-Lean" alt="stars"></a>
 - Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy — *Introduces PhysRSI-eval across 18 manipulation tasks and analyzes first-attempt performance, efficiency, success, budget, and improvement from failure; workspace interventions suggest persistent interaction history and reusable experience can support later and cross-task gains.*
   <a href="https://arxiv.org/abs/2610.26848"><img src="https://img.shields.io/badge/arxiv-2610.26848-silver" alt="Paper"></a>
 - Scaling Online Exploration for Robot Agents — *RAX uses a frozen general-purpose coding agent to learn from online robot exploration and compile verified skills into executable programs; reports multi-embodiment simulation and physical-robot tasks, with an open harness and skill library.*
@@ -555,6 +574,11 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/SgtVincent/EMOS"><img src="https://img.shields.io/github/stars/SgtVincent/EMOS" alt="stars"></a>
 
 ### Programming and Spatial Action Interfaces
+- Do Agentic Policies Need to Look at Every Step? Geometric Abstraction for Reasoning and Action — *A robot interface converts calibrated RGB-D geometry into evidence-grounded symbolic references and compact textual checkpoints, refreshing metric values after actions and invoking visual reasoning on demand; the authors report improved multi-step completion with fewer repeated multimodal queries.*
+  <a href="https://arxiv.org/abs/2611.05058"><img src="https://img.shields.io/badge/arxiv-2611.05058-silver" alt="Paper"></a>
+  <a href="https://geometric-abstraction.github.io/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
+- LLMs as MDP Designers: A Dependency-Aware Agentic Framework for Automated Robot Policy Generation — *Uses an LLM agent before deployment to formulate an MDP, implement its simulator and locally verify state/action/reward/termination consistency, then generate an executable robot RL policy; Isaac Sim experiments report gains over monolithic LLM and agent baselines. This is policy-pipeline authoring, not an LLM directly controlling the robot at inference time.*
+  <a href="https://arxiv.org/abs/2611.04974"><img src="https://img.shields.io/badge/arxiv-2611.04974-silver" alt="Paper"></a>
 - Natural-Language to Nav2: Operational Policies for Costmap-Based Navigation — *A local LLM maps operator instructions to explicit, validated JSON policies that Nav2 applies through costmap plugins; evaluated in Gazebo and on TurtleBot3, with policy interpretation errors and validator safeguards documented.*
   <a href="https://arxiv.org/abs/2610.32633"><img src="https://img.shields.io/badge/arxiv-2610.32633-silver" alt="Paper"></a>
   <a href="https://a56239637-dot.github.io/Natural-Language-to-Nav2-Project-Page/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
@@ -690,6 +714,9 @@ Agents that select and coordinate robot capabilities, track state, verify outcom
   <a href="https://github.com/QinghangLiu/PAL_official"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
 
 Task decomposition, reusable skill orchestration, and task-time memory. Includes learned hierarchical planners and action models where applicable.
+- TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation — *Combines an LVLM agent and perception/planning/control tools with task-and-motion-planning constraints; interleaves observations and manipulation as beliefs change, with evaluations on Rainbow Y1 and Unitree G1.*
+  <a href="https://arxiv.org/abs/2611.03584"><img src="https://img.shields.io/badge/arxiv-2611.03584-silver" alt="Paper"></a>
+  <a href="https://umishra.me/TAMPAgent/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
 - AVALON: Zero-Shot Indoor Navigation with Human-Seeded Topological Memory — *Uses a human-seeded topological map and editable task memory to guide local navigation, verify semantic arrivals, and update physical-state records from robot evidence; evaluated on a quadruped in one office.*
   <a href="https://arxiv.org/abs/2610.21586"><img src="https://img.shields.io/badge/arxiv-2610.21586-silver" alt="Paper"></a>
 - ChunkAct: Action Chunking for Agentic Robotics — *Compiles task knowledge into executable action chunks with typed failure exits, reducing planner calls while retaining feedback-driven replanning; evaluated on simulated manipulation benchmarks.*
