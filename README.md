@@ -592,6 +592,10 @@ Persistent embodied-agent systems that organize robot capabilities, state, resou
   <a href="https://github.com/a56239637-dot/Natural-Language-to-Nav2-Operational-Policies-for-Costmap-Based-Navigation"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
 - Multi-Tool Selection for Robotic Systems: Comparing Semantic Retrieval and LLM — *Compares retrieval and LLM routing for selecting executable robot capabilities from natural-language requests; evaluation uses 164 annotated prompts, so it tests tool selection rather than closed-loop robot task success.*
   <a href="https://arxiv.org/abs/2610.31013"><img src="https://img.shields.io/badge/arxiv-2610.31013-silver" alt="Paper"></a>
+- MJev-Spatial: System One Spatial Intelligence via Native Attention Matching — *A supporting spatial-perception and decision model that uses pretrained query/key projections to score declared choices, numerical bins, and image regions. Its JSON/JSONL inference interface returns structured predictions and candidate scores; the work does not present a full robot-use control system.*
+  <a href="https://arxiv.org/abs/2610.22276"><img src="https://img.shields.io/badge/arxiv-2610.22276-silver" alt="Paper"></a>
+  <a href="https://github.com/Fr0zenCrane/MJev-Spatial"><img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github"></a>
+  <a href="https://github.com/Fr0zenCrane/MJev-Spatial"><img src="https://img.shields.io/github/stars/Fr0zenCrane/MJev-Spatial" alt="stars"></a>
 - MoCaP: Mobile Code-as-Policies for Zero-Shot Mobile Manipulation from Passive Human Videos — *Extracts spatial memory and approach priors from passive human video, then uses a code-as-policy agent and robot-specific navigation and manipulation tools for closed-loop mobile manipulation on physical hardware.*
   <a href="https://arxiv.org/abs/2610.20998"><img src="https://img.shields.io/badge/arxiv-2610.20998-silver" alt="Paper"></a>
   <a href="https://mocap-7.github.io/MoCAP-page/"><img src="https://img.shields.io/badge/-project-blue" alt="Project"></a>
